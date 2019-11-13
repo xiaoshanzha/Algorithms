@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Experiment_one/Leap_year.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Experiment_one/Main.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Experiment_one/Prize.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Experiment_two/Course.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Experiment_two/Height.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Experiment_two/HeightException.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/nuc/Buffer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/nuc/Consumer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/nuc/Main.java" charset="GBK" />
+  </component>
+</project>
