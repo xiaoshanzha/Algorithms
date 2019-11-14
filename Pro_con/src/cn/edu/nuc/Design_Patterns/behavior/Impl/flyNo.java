@@ -5,6 +5,6 @@ import cn.edu.nuc.Design_Patterns.behavior.flyBehavior;
 public class flyNo implements flyBehavior {
     @Override
     public void fly() {
-        System.out.println("鎴戠湡鐨勪笉浼氶");
+        System.out.println("我真的不会飞");
     }
 }

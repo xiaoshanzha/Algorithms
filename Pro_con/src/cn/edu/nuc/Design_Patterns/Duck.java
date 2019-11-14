@@ -9,32 +9,46 @@ public abstract class Duck {
     singBehavior singBehavior;
 
     /**
-     * å¤–è§‚
+     * Íâ¹Û
      */
     public abstract void display();
 
     /**
-     * æ¸¸æ³³
+     * ÓÎÓ¾
      */
     public void swim() {
-        System.out.println("å†²å†²å†²......");
+        System.out.println("³å³å³å......");
     }
 
     /**
-     * é£è¡Œ
+     * ·ÉĞĞ
      */
     public void performFly() {
-        //å°†é£è¡Œè¿™ä»¶å°äº‹å§”æ‰˜ç»™è¡Œä¸ºç±»
+        //½«·ÉĞĞÕâ¼şĞ¡ÊÂÎ¯ÍĞ¸øĞĞÎªÀà
         if (flyBehavior != null)
             flyBehavior.fly();
     }
 
     /**
-     * å”±æ­Œ
+     * ³ª¸è
      */
     public void performQuack() {
-        //å°†å”±æ­Œè¿™ä»¶å°äº‹å§”æ‰˜ç»™è¡Œä¸ºç±»
+        //½«³ª¸èÕâ¼şĞ¡ÊÂÎ¯ÍĞ¸øĞĞÎªÀà
         if (singBehavior != null)
             singBehavior.sing();
     }
+    /*
+    * ÉèÖÃÑ¼×Ó·ÉĞĞµÄĞĞÎª
+    * */
+    public void setFlyBehavior(flyBehavior flyB) {
+        this.flyBehavior = flyB;
+    }
+
+    /*
+    * ÉèÖÃÑ¼×Ó³ª¸èĞĞÎª
+    * */
+    public void setSingBehavior(singBehavior singB) {
+        this.singBehavior = singB;
+    }
+
 }

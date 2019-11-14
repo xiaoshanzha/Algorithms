@@ -5,6 +5,6 @@ import cn.edu.nuc.Design_Patterns.behavior.singBehavior;
 public class singNo implements singBehavior {
     @Override
     public void sing() {
-        System.out.println("æˆ‘æ˜¯å“‘å·´");
+        System.out.println("ÎÒÊÇÑÆ°Í");
     }
 }

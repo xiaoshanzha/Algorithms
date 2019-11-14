@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Design_Patterns/Duck.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Design_Patterns/Main.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Design_Patterns/MallardDuck.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Design_Patterns/behavior/Impl/flyByWings.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Design_Patterns/behavior/Impl/flyNo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Design_Patterns/behavior/Impl/singNo.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Experiment_one/Leap_year.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Experiment_one/Main.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/cn/edu/nuc/Experiment_one/Prize.java" charset="GBK" />

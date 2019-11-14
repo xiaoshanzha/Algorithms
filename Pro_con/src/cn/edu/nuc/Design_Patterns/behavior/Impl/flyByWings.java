@@ -3,11 +3,11 @@ package cn.edu.nuc.Design_Patterns.behavior.Impl;
 import cn.edu.nuc.Design_Patterns.behavior.flyBehavior;
 
 /*
-* é£žè¡Œè¡Œä¸ºå®žçŽ°ç±»
+* ·ÉÐÐÐÐÎªÊµÏÖÀà
 * */
 public class flyByWings implements flyBehavior {
     @Override
     public void fly() {
-        System.out.println("å“ˆå“ˆï¼Œé£žé£žé£ž");
+        System.out.println("¹þ¹þ£¬·É·É·É");
     }
 }
