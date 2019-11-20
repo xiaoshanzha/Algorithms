@@ -25,7 +25,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../LeetCode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -145,6 +145,7 @@
       <updated>1573454241303</updated>
       <workItem from="1573454245360" duration="20285000" />
       <workItem from="1574063806297" duration="853000" />
+      <workItem from="1574216467296" duration="1863000" />
     </task>
     <servers />
   </component>
