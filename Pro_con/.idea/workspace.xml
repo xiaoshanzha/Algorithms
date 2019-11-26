@@ -45,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Student_Manger">
+  <component name="RunManager" selected="Application.temp">
     <configuration name="IO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.edu.nuc.Experiment_three.IO" />
       <module name="Pro_con" />
@@ -113,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Student_Manger" />
         <item itemvalue="Application.temp" />
+        <item itemvalue="Application.Student_Manger" />
         <item itemvalue="Application.IO" />
         <item itemvalue="Application.Object" />
         <item itemvalue="Application.Main (1)" />
@@ -134,7 +134,8 @@
       <workItem from="1573454245360" duration="20285000" />
       <workItem from="1574063806297" duration="853000" />
       <workItem from="1574216467296" duration="1974000" />
-      <workItem from="1574664574026" duration="15530000" />
+      <workItem from="1574664574026" duration="15744000" />
+      <workItem from="1574766766016" duration="5384000" />
     </task>
     <servers />
   </component>
