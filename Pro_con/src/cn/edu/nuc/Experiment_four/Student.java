@@ -1,6 +1,8 @@
 package cn.edu.nuc.Experiment_four;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student{
     private String Name;
     private String Sex;
     private String Stu_num;

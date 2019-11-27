@@ -1,10 +1,9 @@
 package cn.edu.nuc.Experiment_three;
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.*;
 import java.util.*;
 
-public class Object {
-    public static void main(String[] args) {
+public class Object{
+    public static void main(String[] args) throws IOException, ClassNotFoundException{
         Student student1 = new Student("汪某","女");
         Student student2 = new Student("韩某","女");
         Student student3 = new Student("胡某","女");
@@ -14,22 +13,24 @@ public class Object {
         list.add(student2);
         list.add(student3);
         list.add(student4);
-        FileReader fr = null;
-        FileWriter fw = null;
-        try {
-            fw = new FileWriter("F:\\GitHub\\Algorithms\\Pro_con\\src\\cn\\edu\\nuc\\Experiment_three\\Student.txt");
-            for(int i = 0;i<list.size();i++){
-                fw.write(list.get(i).toString());
-            }
-            fw.close();
-            fr = new FileReader("F:\\GitHub\\Algorithms\\Pro_con\\src\\cn\\edu\\nuc\\Experiment_three\\Student.txt");
-            char[] c = new char[1024];
-            int len = 0;
-            while((len=fr.read(c))!=-1){
-                System.out.println(c);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
+
+        File file =  new File("F:\\GitHub\\Algorithms\\Pro_con\\src\\cn\\edu\\nuc\\Experiment_three\\student.txt");
+        FileOutputStream fos = new FileOutputStream(file);
+        FileInputStream fis = new FileInputStream(file);
+        ObjectOutputStream objectOutputStream = new ObjectOutputStream(fos);
+        for (Student s:list) {
+            objectOutputStream.writeObject(s);
         }
+        ObjectInputStream objectInputStream = new ObjectInputStream(fis);
+        Student t = null;
+        try {
+            while ( (t = (Student)objectInputStream.readObject())!=null)
+            {
+                System.out.println(t.toString());
+            }
+        }catch (EOFException e){ //EOF 即End Of File;当读取结束 抛出此异常
+            System.out.println("读取结束");
+        }
+
     }
 }
