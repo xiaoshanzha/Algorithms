@@ -4,6 +4,8 @@ import java.util.*;
 
 public class Object{
     public static void main(String[] args) throws IOException, ClassNotFoundException{
+
+
         Student student1 = new Student("ÍôÄ³","Å®");
         Student student2 = new Student("º«Ä³","Å®");
         Student student3 = new Student("ºúÄ³","Å®");
