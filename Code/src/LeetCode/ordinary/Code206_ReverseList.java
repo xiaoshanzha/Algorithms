@@ -1,6 +1,4 @@
-package LeetCode;
-
-import java.util.List;
+package LeetCode.ordinary;
 
 public class Code206_ReverseList {
     public static class ListNode{

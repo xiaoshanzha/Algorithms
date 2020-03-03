@@ -19,11 +19,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1Wyn3LaTKdHHzoq7DewSFKfp9L4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/LeetCode/ordinary" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -31,7 +33,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="NowCoder" />
       <recent name="Linked_list" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\GitHub\Algorithms\Code\src\LeetCode\ordinary" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -46,13 +52,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code206_ReverseList">
+  <component name="RunManager" selected="Application.Code84_MaxRecFromBottom">
     <configuration name="Code206_ReverseList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.Code206_ReverseList" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.*" />
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -60,26 +66,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KMP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KMP" />
-      <module name="holiday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Manacher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Manacher" />
-      <module name="holiday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReverseList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Template.Linked_list.ReverseList" />
+    <configuration name="Code239_GetMaxWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code239_GetMaxWindow" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Template.Linked_list.*" />
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,20 +79,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hah" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hah" />
+    <configuration name="Code84_MaxRecFromBottom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code84_MaxRecFromBottom" />
       <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetMaxWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Template.Stack_Queue.GetMaxWindow" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Template.Stack_Queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetNumByMaxMin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NowCoder.GetNumByMaxMin" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="NowCoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code84_MaxRecFromBottom" />
+        <item itemvalue="Application.GetNumByMaxMin" />
+        <item itemvalue="Application.GetMaxWindow" />
+        <item itemvalue="Application.Code239_GetMaxWindow" />
         <item itemvalue="Application.Code206_ReverseList" />
-        <item itemvalue="Application.ReverseList" />
-        <item itemvalue="Application.Manacher" />
-        <item itemvalue="Application.KMP" />
-        <item itemvalue="Application.hah" />
       </list>
     </recent_temporary>
   </component>
@@ -122,10 +146,22 @@
       <workItem from="1582029381146" duration="20051000" />
       <workItem from="1582379760882" duration="22307000" />
       <workItem from="1583058416529" duration="24266000" />
+      <workItem from="1583128372038" duration="21899000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

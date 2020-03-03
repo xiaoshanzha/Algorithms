@@ -1,4 +1,4 @@
-package _19;
+package LeetCode.ordinary._19;
 
 import java.util.List;
 

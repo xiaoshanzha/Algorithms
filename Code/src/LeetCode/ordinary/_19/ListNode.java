@@ -1,4 +1,4 @@
-package _2;
+package LeetCode.ordinary._19;
 
 public class ListNode {
     public int val;

@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ordinary;
 
 public class Code92_ReversePartList {
     public static class ListNode{
