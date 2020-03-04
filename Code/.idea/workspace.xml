@@ -11,6 +11,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -24,7 +25,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/LeetCode/ordinary" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Template/Graph" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -33,10 +34,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Template.Graph" />
       <recent name="NowCoder" />
       <recent name="Linked_list" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\GitHub\Algorithms\Code\src\Template\Graph" />
       <recent name="F:\GitHub\Algorithms\Code\src\LeetCode\ordinary" />
     </key>
   </component>
@@ -52,9 +55,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code84_MaxRecFromBottom">
-    <configuration name="Code206_ReverseList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Code206_ReverseList" />
+  <component name="RunManager" selected="Application.Code130_SurroundArea">
+    <configuration name="Code101_Symmetry_BinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code101_Symmetry_BinaryTree" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -66,8 +69,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code239_GetMaxWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code239_GetMaxWindow" />
+    <configuration name="Code130_SurroundArea" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code130_SurroundArea" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -92,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetMaxWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Template.Stack_Queue.GetMaxWindow" />
+    <configuration name="Code994_orangesRotting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code994_orangesRotting" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Template.Stack_Queue.*" />
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetNumByMaxMin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NowCoder.GetNumByMaxMin" />
+    <configuration name="PreInPosTraversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Binary_Tree.PreInPosTraversal" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="NowCoder.*" />
+          <option name="PATTERN" value="Binary_Tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code130_SurroundArea" />
+        <item itemvalue="Application.Code101_Symmetry_BinaryTree" />
+        <item itemvalue="Application.PreInPosTraversal" />
+        <item itemvalue="Application.Code994_orangesRotting" />
         <item itemvalue="Application.Code84_MaxRecFromBottom" />
-        <item itemvalue="Application.GetNumByMaxMin" />
-        <item itemvalue="Application.GetMaxWindow" />
-        <item itemvalue="Application.Code239_GetMaxWindow" />
-        <item itemvalue="Application.Code206_ReverseList" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +149,7 @@
       <workItem from="1582029381146" duration="20051000" />
       <workItem from="1582379760882" duration="22307000" />
       <workItem from="1583058416529" duration="24266000" />
-      <workItem from="1583128372038" duration="21899000" />
+      <workItem from="1583128372038" duration="39866000" />
     </task>
     <servers />
   </component>

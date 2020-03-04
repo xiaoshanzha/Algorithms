@@ -18,7 +18,7 @@ public class PreInPosTraversal {
     *               3.重复2过程，直到栈为空。
     *         中序：1.申请一个栈，初始时，令cur = head；
     *               2.先把cur节点压入栈中，对以cur节点为头的整棵树来说，依次把左边界压入栈中，
-    *                 即cur = cur.left,依次重复该步骤，指导发现cur为空；
+    *                 即cur = cur.left,依次重复该步骤，直到发现cur为空；
     *               3.此时从栈中弹出一个节点，打印该节点，(保证每次取出的都是未打印部分最左部分的数)
     *                 并让cur = cur.right，重复步骤2；
     *               4.当栈为空时，结束
@@ -156,5 +156,6 @@ public class PreInPosTraversal {
         InOrderUnRecur(head);
         PosOrderUnRecur(head);
        // posOrderUnRecur2(head);
+
     }
 }
