@@ -1,4 +1,5 @@
-package _61;
+package LeetCode.ordinary._61;
+import LeetCode.ordinary.Base.ListNode;
 
 public class Solution {
 

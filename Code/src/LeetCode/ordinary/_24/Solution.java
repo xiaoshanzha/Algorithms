@@ -1,4 +1,5 @@
-package _24;
+package LeetCode.ordinary._24;
+import LeetCode.ordinary.Base.ListNode;
 
 public class Solution {
        public ListNode swapPairs(ListNode head) {

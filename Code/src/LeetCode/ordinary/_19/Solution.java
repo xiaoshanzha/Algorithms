@@ -1,6 +1,5 @@
 package LeetCode.ordinary._19;
-
-import java.util.List;
+import LeetCode.ordinary.Base.ListNode;
 
 public class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {

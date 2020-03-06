@@ -1,7 +1,5 @@
 package _21;
 
-import _21.ListNode;
-
 public class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode h = new ListNode(-1);

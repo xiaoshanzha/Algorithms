@@ -1,4 +1,5 @@
-package _86;
+package LeetCode.ordinary._86;
+import LeetCode.ordinary.Base.ListNode;
 
 public class Solution {
     // 哈哈，跟官方题解完全一样，就是效率不高

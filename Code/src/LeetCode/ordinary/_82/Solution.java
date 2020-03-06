@@ -1,4 +1,5 @@
-package _82;
+package LeetCode.ordinary._82;
+import LeetCode.ordinary.Base.ListNode;
 
 public class Solution {
     public ListNode deleteDuplicates(ListNode head) {

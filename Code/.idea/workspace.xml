@@ -34,6 +34,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="LeetCode.ordinary._2" />
       <recent name="Template.Graph" />
       <recent name="NowCoder" />
       <recent name="Linked_list" />
@@ -55,20 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code42_Rain">
-    <configuration name="Code101_Symmetry_BinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code101_Symmetry_BinaryTree" />
-      <module name="holiday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Code66_plusOne">
     <configuration name="Code1103_DistributeCandies" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code1103_DistributeCandies" />
       <module name="holiday" />
@@ -102,12 +90,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PreInPosTraversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Binary_Tree.PreInPosTraversal" />
+    <configuration name="Code57_2_FindContinuousSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code57_2_FindContinuousSequence" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Binary_Tree.*" />
+          <option name="PATTERN" value="LeetCode.Interview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Code66_plusOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code66_plusOne" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code66_plusOne" />
+        <item itemvalue="Application.Code57_2_FindContinuousSequence" />
         <item itemvalue="Application.Code42_Rain" />
         <item itemvalue="Application.Code1103_DistributeCandies" />
         <item itemvalue="Application.Code130_SurroundArea" />
-        <item itemvalue="Application.Code101_Symmetry_BinaryTree" />
-        <item itemvalue="Application.PreInPosTraversal" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +144,7 @@
       <workItem from="1582029381146" duration="20051000" />
       <workItem from="1582379760882" duration="22307000" />
       <workItem from="1583058416529" duration="24266000" />
-      <workItem from="1583128372038" duration="54775000" />
+      <workItem from="1583128372038" duration="66134000" />
     </task>
     <servers />
   </component>

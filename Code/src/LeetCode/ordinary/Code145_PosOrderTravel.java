@@ -1,7 +1,6 @@
 package LeetCode.ordinary;
 
 import LeetCode.ordinary.Base.TreeNode;
-import javafx.scene.control.skin.SliderSkin;
 
 import java.util.ArrayList;
 import java.util.List;
