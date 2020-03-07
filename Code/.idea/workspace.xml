@@ -56,13 +56,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code66_plusOne">
-    <configuration name="Code1103_DistributeCandies" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code1103_DistributeCandies" />
+  <component name="RunManager" selected="Application.Code06_Convert">
+    <configuration name="Code06_Convert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code06_Convert" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="PATTERN" value="LeetCode.Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,22 +70,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code130_SurroundArea" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code130_SurroundArea" />
+    <configuration name="Code3_lengthOfLongestSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code3_lengthOfLongestSubstring" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="PATTERN" value="LeetCode.Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Code42_Rain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Code42_Rain" />
-      <module name="holiday" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,12 +96,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Code59_2_GetMaxQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code59_2_GetMaxQueue" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.Interview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Code66_plusOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code66_plusOne" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="PATTERN" value="LeetCode.Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code06_Convert" />
+        <item itemvalue="Application.Code3_lengthOfLongestSubstring" />
+        <item itemvalue="Application.Code59_2_GetMaxQueue" />
         <item itemvalue="Application.Code66_plusOne" />
         <item itemvalue="Application.Code57_2_FindContinuousSequence" />
-        <item itemvalue="Application.Code42_Rain" />
-        <item itemvalue="Application.Code1103_DistributeCandies" />
-        <item itemvalue="Application.Code130_SurroundArea" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +150,7 @@
       <workItem from="1582029381146" duration="20051000" />
       <workItem from="1582379760882" duration="22307000" />
       <workItem from="1583058416529" duration="24266000" />
-      <workItem from="1583128372038" duration="66134000" />
+      <workItem from="1583128372038" duration="76493000" />
     </task>
     <servers />
   </component>

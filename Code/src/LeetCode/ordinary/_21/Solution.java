@@ -1,4 +1,5 @@
-package _21;
+package LeetCode.ordinary._21;
+import LeetCode.ordinary.Base.ListNode;
 
 public class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
