@@ -56,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code06_Convert">
+  <component name="RunManager" selected="Application.Code51_maxSubArray">
     <configuration name="Code06_Convert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code06_Convert" />
       <module name="holiday" />
@@ -70,8 +70,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code3_lengthOfLongestSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code3_lengthOfLongestSubstring" />
+    <configuration name="Code08_01_waysTostep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code08_01_waysTostep" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -83,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code57_2_FindContinuousSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code57_2_FindContinuousSequence" />
+    <configuration name="Code322_CoinChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code322_CoinChange" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.Interview.*" />
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code59_2_GetMaxQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code59_2_GetMaxQueue" />
+    <configuration name="Code51_maxSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code51_maxSubArray" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.Interview.*" />
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code66_plusOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code66_plusOne" />
+    <configuration name="Code70_climbStairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code70_climbStairs" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.Interview.*" />
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code51_maxSubArray" />
+        <item itemvalue="Application.Code08_01_waysTostep" />
+        <item itemvalue="Application.Code70_climbStairs" />
+        <item itemvalue="Application.Code322_CoinChange" />
         <item itemvalue="Application.Code06_Convert" />
-        <item itemvalue="Application.Code3_lengthOfLongestSubstring" />
-        <item itemvalue="Application.Code59_2_GetMaxQueue" />
-        <item itemvalue="Application.Code66_plusOne" />
-        <item itemvalue="Application.Code57_2_FindContinuousSequence" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +150,8 @@
       <workItem from="1582029381146" duration="20051000" />
       <workItem from="1582379760882" duration="22307000" />
       <workItem from="1583058416529" duration="24266000" />
-      <workItem from="1583128372038" duration="76493000" />
+      <workItem from="1583128372038" duration="77198000" />
+      <workItem from="1583673793171" duration="6729000" />
     </task>
     <servers />
   </component>
@@ -162,7 +163,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
