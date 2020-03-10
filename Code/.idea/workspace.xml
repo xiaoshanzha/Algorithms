@@ -56,22 +56,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code714_MaxProfit">
-    <configuration name="Code122_MaxProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code122_MaxProfit" />
-      <module name="holiday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Code123_maxProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code123_maxProfit" />
+  <component name="RunManager" selected="Application.Code124_maxPathSum">
+    <configuration name="Code124_maxPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code124_maxPathSum" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -109,6 +96,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Code543_diameterOfBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code543_diameterOfBinaryTree" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Code714_MaxProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code714_MaxProfit" />
       <module name="holiday" />
@@ -124,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code124_maxPathSum" />
+        <item itemvalue="Application.Code543_diameterOfBinaryTree" />
         <item itemvalue="Application.Code714_MaxProfit" />
         <item itemvalue="Application.Code309_MaxProfit" />
         <item itemvalue="Application.Code188_maxProfit" />
-        <item itemvalue="Application.Code123_maxProfit" />
-        <item itemvalue="Application.Code122_MaxProfit" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +151,8 @@
       <workItem from="1582379760882" duration="22307000" />
       <workItem from="1583058416529" duration="24266000" />
       <workItem from="1583128372038" duration="77198000" />
-      <workItem from="1583673793171" duration="23979000" />
+      <workItem from="1583673793171" duration="24591000" />
+      <workItem from="1583848166246" duration="6892000" />
     </task>
     <servers />
   </component>
