@@ -56,7 +56,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code124_maxPathSum">
+  <component name="RunManager" selected="Application.Code129_sumNumbers">
+    <configuration name="Code1013_canThreePartsEqualSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code1013_canThreePartsEqualSum" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Code112_hasPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code112_hasPathSum" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Code124_maxPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code124_maxPathSum" />
       <module name="holiday" />
@@ -70,21 +96,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code188_maxProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code188_maxProfit" />
-      <module name="holiday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Code309_MaxProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code309_MaxProfit" />
+    <configuration name="Code129_sumNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code129_sumNumbers" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -109,26 +122,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code714_MaxProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code714_MaxProfit" />
-      <module name="holiday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code129_sumNumbers" />
+        <item itemvalue="Application.Code112_hasPathSum" />
+        <item itemvalue="Application.Code1013_canThreePartsEqualSum" />
         <item itemvalue="Application.Code124_maxPathSum" />
         <item itemvalue="Application.Code543_diameterOfBinaryTree" />
-        <item itemvalue="Application.Code714_MaxProfit" />
-        <item itemvalue="Application.Code309_MaxProfit" />
-        <item itemvalue="Application.Code188_maxProfit" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +152,7 @@
       <workItem from="1583058416529" duration="24266000" />
       <workItem from="1583128372038" duration="77198000" />
       <workItem from="1583673793171" duration="24591000" />
-      <workItem from="1583848166246" duration="6892000" />
+      <workItem from="1583848166246" duration="19710000" />
     </task>
     <servers />
   </component>
