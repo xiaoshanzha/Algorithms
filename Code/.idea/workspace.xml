@@ -56,13 +56,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code129_sumNumbers">
-    <configuration name="Code1013_canThreePartsEqualSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code1013_canThreePartsEqualSum" />
+  <component name="RunManager" selected="Application.Code58_1_reverseWords">
+    <configuration name="Code10_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code10_2" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="PATTERN" value="LeetCode.Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code112_hasPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code112_hasPathSum" />
+    <configuration name="Code21_exchange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code21_exchange" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="PATTERN" value="LeetCode.Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code124_maxPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code124_maxPathSum" />
+    <configuration name="Code29_spiralOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code29_spiralOrder" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="PATTERN" value="LeetCode.Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code129_sumNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code129_sumNumbers" />
+    <configuration name="Code42_maxSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code42_maxSubArray" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="PATTERN" value="LeetCode.Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code543_diameterOfBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code543_diameterOfBinaryTree" />
+    <configuration name="Code58_1_reverseWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code58_1_reverseWords" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="PATTERN" value="LeetCode.Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Code129_sumNumbers" />
-        <item itemvalue="Application.Code112_hasPathSum" />
-        <item itemvalue="Application.Code1013_canThreePartsEqualSum" />
-        <item itemvalue="Application.Code124_maxPathSum" />
-        <item itemvalue="Application.Code543_diameterOfBinaryTree" />
+        <item itemvalue="Application.Code58_1_reverseWords" />
+        <item itemvalue="Application.Code21_exchange" />
+        <item itemvalue="Application.Code42_maxSubArray" />
+        <item itemvalue="Application.Code10_2" />
+        <item itemvalue="Application.Code29_spiralOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +152,8 @@
       <workItem from="1583058416529" duration="24266000" />
       <workItem from="1583128372038" duration="77198000" />
       <workItem from="1583673793171" duration="24591000" />
-      <workItem from="1583848166246" duration="19710000" />
+      <workItem from="1583848166246" duration="21011000" />
+      <workItem from="1583982963677" duration="7903000" />
     </task>
     <servers />
   </component>
