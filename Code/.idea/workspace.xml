@@ -12,6 +12,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -56,9 +57,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code31_validateStackSequences">
-    <configuration name="Code11_minArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code11_minArray" />
+  <component name="RunManager" selected="Application.Code40_getMinKByheap">
+    <configuration name="Code10_1_fib" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code10_1_fib" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -70,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code300_lengthOfLIS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code300_lengthOfLIS" />
+    <configuration name="Code13_movingCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code13_movingCount" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="PATTERN" value="LeetCode.Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code53_1_search" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code53_1_search" />
+    <configuration name="Code40_getMinKByheap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code40_getMinKByheap" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +110,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code79_exist" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code79_exist" />
+    <configuration name="Code695_maxAreaOfIsland" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code695_maxAreaOfIsland" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -124,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code40_getMinKByheap" />
+        <item itemvalue="Application.Code10_1_fib" />
+        <item itemvalue="Application.Code13_movingCount" />
+        <item itemvalue="Application.Code695_maxAreaOfIsland" />
         <item itemvalue="Application.Code31_validateStackSequences" />
-        <item itemvalue="Application.Code53_1_search" />
-        <item itemvalue="Application.Code11_minArray" />
-        <item itemvalue="Application.Code300_lengthOfLIS" />
-        <item itemvalue="Application.Code79_exist" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +155,7 @@
       <workItem from="1583673793171" duration="24591000" />
       <workItem from="1583848166246" duration="21011000" />
       <workItem from="1583982963677" duration="20764000" />
-      <workItem from="1584184886400" duration="11109000" />
+      <workItem from="1584184886400" duration="24689000" />
     </task>
     <servers />
   </component>
