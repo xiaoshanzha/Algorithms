@@ -57,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code01_06">
+  <component name="RunManager" selected="Application.Code32_1_levelOrder">
     <configuration name="Code01_06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code01_06" />
       <module name="holiday" />
@@ -71,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code10_1_fib" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code10_1_fib" />
+    <configuration name="Code1160_countCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code1160_countCharacters" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.Interview.*" />
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,8 +84,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code13_movingCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code13_movingCount" />
+    <configuration name="Code32_1_levelOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code32_1_levelOrder" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -110,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code695_maxAreaOfIsland" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code695_maxAreaOfIsland" />
+    <configuration name="Code55_2_isBalanced" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code55_2_isBalanced" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="PATTERN" value="LeetCode.Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code32_1_levelOrder" />
+        <item itemvalue="Application.Code55_2_isBalanced" />
+        <item itemvalue="Application.Code1160_countCharacters" />
         <item itemvalue="Application.Code01_06" />
         <item itemvalue="Application.Code40_getMinKByheap" />
-        <item itemvalue="Application.Code10_1_fib" />
-        <item itemvalue="Application.Code13_movingCount" />
-        <item itemvalue="Application.Code695_maxAreaOfIsland" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +156,7 @@
       <workItem from="1583848166246" duration="21011000" />
       <workItem from="1583982963677" duration="20764000" />
       <workItem from="1584184886400" duration="24689000" />
-      <workItem from="1584324082897" duration="1408000" />
+      <workItem from="1584324082897" duration="9023000" />
     </task>
     <servers />
   </component>
@@ -175,5 +175,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="map" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
