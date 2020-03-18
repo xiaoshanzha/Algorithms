@@ -2,9 +2,6 @@ package LeetCode.ordinary;
 
 import LeetCode.ordinary.Base.TreeNode;
 
-import java.sql.PreparedStatement;
-import java.util.PriorityQueue;
-
 public class Code104_maxDepth {
     public int Process(TreeNode root) {
         if(root == null){

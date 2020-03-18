@@ -68,7 +68,8 @@ public class Code101_Symmetry_BinaryTree {
         return true;
     }
     /*
-    * 中序遍历判断 结果是不是回文即可
+    * 不能中序遍历判断 结果是不是回文即可
+    * eg：[1,2,2,2,null,2] 遍历结果是回文。但不对称
     * */
     public static boolean isSymmetric3(TreeNode root) {
         if(root == null) {
@@ -97,6 +98,8 @@ public class Code101_Symmetry_BinaryTree {
             if(s.get(first) != s.get(last)){
                 return false;
             }
+            first++;
+            last--;
         }
         return true;
     }
