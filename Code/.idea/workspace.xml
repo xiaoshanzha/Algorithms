@@ -57,22 +57,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code58_2_reverseLeftWords">
-    <configuration name="Code1160_countCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code1160_countCharacters" />
-      <module name="holiday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Code32_1_levelOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code32_1_levelOrder" />
+  <component name="RunManager" selected="Application.Code04_findNumberIn2DArray">
+    <configuration name="Code04_findNumberIn2DArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code04_findNumberIn2DArray" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -84,8 +71,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code55_2_isBalanced" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code55_2_isBalanced" />
+    <configuration name="Code12_exist" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code12_exist" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.Interview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Code14_2_cuttingRope" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code14_2_cuttingRope" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -125,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code04_findNumberIn2DArray" />
+        <item itemvalue="Application.Code14_2_cuttingRope" />
+        <item itemvalue="Application.Code12_exist" />
         <item itemvalue="Application.Code58_2_reverseLeftWords" />
         <item itemvalue="Application.Code863_isRectangleOverlap" />
-        <item itemvalue="Application.Code32_1_levelOrder" />
-        <item itemvalue="Application.Code55_2_isBalanced" />
-        <item itemvalue="Application.Code1160_countCharacters" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +157,7 @@
       <workItem from="1583982963677" duration="20764000" />
       <workItem from="1584184886400" duration="24689000" />
       <workItem from="1584324082897" duration="9025000" />
-      <workItem from="1584516464761" duration="8034000" />
+      <workItem from="1584516464761" duration="17653000" />
     </task>
     <servers />
   </component>
