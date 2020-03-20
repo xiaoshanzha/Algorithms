@@ -57,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code04_findNumberIn2DArray">
+  <component name="RunManager" selected="Application.Code61_isStraight">
     <configuration name="Code04_findNumberIn2DArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code04_findNumberIn2DArray" />
       <module name="holiday" />
@@ -97,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code58_2_reverseLeftWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code58_2_reverseLeftWords" />
+    <configuration name="Code48_lengthOfLongestSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code48_lengthOfLongestSubstring" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -110,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code863_isRectangleOverlap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code863_isRectangleOverlap" />
+    <configuration name="Code61_isStraight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code61_isStraight" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="PATTERN" value="LeetCode.Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code61_isStraight" />
+        <item itemvalue="Application.Code48_lengthOfLongestSubstring" />
         <item itemvalue="Application.Code04_findNumberIn2DArray" />
         <item itemvalue="Application.Code14_2_cuttingRope" />
         <item itemvalue="Application.Code12_exist" />
-        <item itemvalue="Application.Code58_2_reverseLeftWords" />
-        <item itemvalue="Application.Code863_isRectangleOverlap" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +157,8 @@
       <workItem from="1583982963677" duration="20764000" />
       <workItem from="1584184886400" duration="24689000" />
       <workItem from="1584324082897" duration="9025000" />
-      <workItem from="1584516464761" duration="17653000" />
+      <workItem from="1584516464761" duration="18259000" />
+      <workItem from="1584665390875" duration="4041000" />
     </task>
     <servers />
   </component>
