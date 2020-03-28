@@ -9,7 +9,6 @@ public class Main {
         int n = Integer.parseInt(strings[0]);
         int m = Integer.parseInt(strings[1]);
         int k = Integer.parseInt(strings[2]);
-        int index = 0;
         PriorityQueue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer t0, Integer t1) {
@@ -18,16 +17,17 @@ public class Main {
         });
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= m; j++) {
+                int temp = i * j;
                 if(((i - 1) * m + j )<= k){
-                    queue.add( i * j);
+                    queue.add( temp);
                 }else {
-                    if(queue.peek() > (i * j)){
+                    if(queue.peek() > temp){
                         queue.poll();
-                        queue.add(i * j);
+                        queue.add(temp);
                     }
-                }
-                if(queue.size() == k &&(i * j) >= queue.peek()){
-                    break;
+                    if(temp >= queue.peek()){
+                        break;
+                    }
                 }
             }
         }

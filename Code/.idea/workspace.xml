@@ -57,20 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Code04_findNumberIn2DArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code04_findNumberIn2DArray" />
-      <module name="holiday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LeetCode.Interview.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Code875_minEatingSpeed">
     <configuration name="Code48_lengthOfLongestSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code48_lengthOfLongestSubstring" />
       <module name="holiday" />
@@ -90,6 +77,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="LeetCode.Interview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Code875_minEatingSpeed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code875_minEatingSpeed" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code875_minEatingSpeed" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Code914_hasGroupsSizeX" />
         <item itemvalue="Application.Code61_isStraight" />
         <item itemvalue="Application.Code48_lengthOfLongestSubstring" />
-        <item itemvalue="Application.Code04_findNumberIn2DArray" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +153,8 @@
       <workItem from="1584324082897" duration="9025000" />
       <workItem from="1584516464761" duration="18259000" />
       <workItem from="1584665390875" duration="4065000" />
-      <workItem from="1584800992575" duration="14343000" />
+      <workItem from="1584800992575" duration="15741000" />
+      <workItem from="1585376086549" duration="6814000" />
     </task>
     <servers />
   </component>
