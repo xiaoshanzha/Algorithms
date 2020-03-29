@@ -54,12 +54,14 @@ public class Comparator_ {
         Student[] students = new Student[] { student3, student2, student1 };
         printStudents(students);
 
-        Arrays.sort(students, new IdAscendingComparator());
-        printStudents(students);
+
 
         Arrays.sort(students, new IdDescendingComparator());
         printStudents(students);
 
+        Arrays.sort(students, new IdAscendingComparator());
+        printStudents(students);
+        
         Arrays.sort(students, new AgeAscendingComparator());
         printStudents(students);
 
