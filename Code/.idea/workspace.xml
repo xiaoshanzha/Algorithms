@@ -57,13 +57,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Code61_isStraight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code61_isStraight" />
+  <component name="RunManager" selected="Application.Code8_myAtoi">
+    <configuration name="Code875_minEatingSpeed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code875_minEatingSpeed" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.Interview.*" />
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,8 +71,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code875_minEatingSpeed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code875_minEatingSpeed" />
+    <configuration name="Code8_myAtoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code8_myAtoi" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -119,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code8_myAtoi" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Comparator_" />
         <item itemvalue="Application.Code875_minEatingSpeed" />
         <item itemvalue="Application.Code914_hasGroupsSizeX" />
-        <item itemvalue="Application.Code61_isStraight" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +156,8 @@
       <workItem from="1584800992575" duration="15741000" />
       <workItem from="1585376086549" duration="7218000" />
       <workItem from="1585470471033" duration="13930000" />
-      <workItem from="1585579689309" duration="718000" />
+      <workItem from="1585579689309" duration="847000" />
+      <workItem from="1585665197856" duration="2546000" />
     </task>
     <servers />
   </component>
