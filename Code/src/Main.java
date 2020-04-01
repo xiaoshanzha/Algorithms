@@ -48,6 +48,38 @@ public class Main {
     }
 }
 
+/*import java.util.Scanner;
+public class Main{
+    public static boolean isorno(String s1,String s2){
+        if (s1 == null || s2 == null || s1.length() != s2.length()) {
+            return false;
+        }
+        char[] chars1 = s1.toCharArray();
+        char[] chars2 = s2.toCharArray();
+        int[] map = new int[256];
+        for(int i = 0;i < chars1.length;i++){
+            map[chars1[i]]++;
+        }
+        for(int i = 0;i < chars2.length;i++){
+            if(map[chars2[i]]-- == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        String str1 = sc.next();
+        String str2 = sc.next();
+        if(m != n){
+            System.out.println("false");
+        }else{
+            System.out.println(isorno(str1,str2));
+        }
+    }
+}*/
 
 
 
