@@ -57,35 +57,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code8_myAtoi">
-    <configuration name="Code875_minEatingSpeed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code875_minEatingSpeed" />
-      <module name="holiday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Code8_myAtoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code8_myAtoi" />
-      <module name="holiday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Code914_hasGroupsSizeX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code914_hasGroupsSizeX" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -110,6 +84,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LCS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LCS" />
+      <module name="holiday" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="wangyi.Main" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="wangyi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="holiday" />
@@ -119,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.LCS" />
         <item itemvalue="Application.Code8_myAtoi" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Comparator_" />
-        <item itemvalue="Application.Code875_minEatingSpeed" />
-        <item itemvalue="Application.Code914_hasGroupsSizeX" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +152,8 @@
       <workItem from="1585470471033" duration="13930000" />
       <workItem from="1585579689309" duration="847000" />
       <workItem from="1585665197856" duration="9668000" />
-      <workItem from="1586098117828" duration="4636000" />
+      <workItem from="1586098117828" duration="5240000" />
+      <workItem from="1586234485633" duration="17631000" />
     </task>
     <servers />
   </component>
