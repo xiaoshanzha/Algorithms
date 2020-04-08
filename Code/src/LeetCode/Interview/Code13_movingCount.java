@@ -1,33 +1,41 @@
 package LeetCode.Interview;
 
-import java.util.HashSet;
-
 public class Code13_movingCount {
-    HashSet<String> set = new HashSet<>();
     public int m;
     public int n;
     public int k;
+    public int[][] map;
     public int movingCount(int m, int n, int k) {
         this.m = m;
         this.n = n;
         this.k = k;
-        infect(0,0);
-        return set.size();
-    }
-    public void infect(int i , int j){
-        if(i < 0 || i >= m || j < 0 || j >= n ){
-            return;
+        this.map = new int[m][n];
+        dfs(0,0);
+        int res = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if(map[i][j] == 1){
+                    res++;
+                }
+            }
         }
-        if(sum(i,j) <= k && !set.contains(i + " " + j)){
-            set.add(i + " " + j);
-            infect(i - 1,j);
-            infect(i + 1,j);
-            infect(i,j - 1);
-            infect(i,j + 1);
-        }
-        return;
+        return res;
     }
-    public int sum(int i,int j){
+
+    public void dfs(int i , int j){
+       if(i < 0 || i >= m || j < 0 || j >= n || map[i][j] == 1){
+           return;
+       }
+       if(getsum(i,j) <= k){
+           map[i][j] = 1;
+           dfs(i + 1,j);
+           dfs(i - 1,j);
+           dfs(i , j - 1);
+           dfs(i ,j + 1);
+       }
+    }
+
+    public int getsum(int i,int j){
         int temp = 0;
         int res = 0;
         while(i > 0){
@@ -46,6 +54,6 @@ public class Code13_movingCount {
 
     public static void main(String[] args) {
         Code13_movingCount c = new Code13_movingCount();
-        System.out.println(c.movingCount(2,3,1));
+        System.out.println(c.movingCount(3,1,0));
     }
 }
