@@ -33,11 +33,13 @@ public class Code124_maxPathSum {
         int maxsum = 0;
         int sum = 0;
 
-        // 后面计算sum、maxsum时，会出现两个系统最小值相加溢出的情况
+        // 后面计算sum、maxsum时，会出现系统最小值和负数相加溢出的情况
+        // 处理叶子节点
         if(left.sum == Integer.MIN_VALUE && right.sum == Integer.MIN_VALUE){
             maxsum = node.val;
             sum = node.val;
         }else {
+            //左孩子为空
             if(left.sum == Integer.MIN_VALUE){
                 if(node.val < 0){
                     //保证不会影响后面的计算，而且不会溢出
@@ -46,6 +48,8 @@ public class Code124_maxPathSum {
                     left.sum = 0;
                 }
             }
+            //右孩子为空
+
             if(right.sum == Integer.MIN_VALUE){
                 if(node.val < 0){
                     right.sum = node.val;
