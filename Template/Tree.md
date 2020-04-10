@@ -247,7 +247,7 @@ public ReturnData process(TreeNode node){
     int maxsum = 0;
     int sum = 0;
 
-    // 后面计算sum、maxsum时，会出现两个系统最小值相加溢出的情况
+    // 后面计算sum、maxsum时，会出现系统最小值和负数相加溢出的情况
     if(left.sum == Integer.MIN_VALUE && right.sum == Integer.MIN_VALUE){
         maxsum = node.val;
         sum = node.val;

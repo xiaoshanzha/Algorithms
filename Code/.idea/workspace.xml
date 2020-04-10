@@ -57,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Code151_reverseWords">
     <configuration name="Code13_movingCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code13_movingCount" />
       <module name="holiday" />
@@ -71,8 +71,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code22_generateParenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code22_generateParenthesis" />
+    <configuration name="Code151_reverseWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code151_reverseWords" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -84,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="wangyi.Main" />
+    <configuration name="Code22_generateParenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code22_generateParenthesis" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="wangyi.*" />
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code151_reverseWords" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Code22_generateParenthesis" />
         <item itemvalue="Application.skill" />
         <item itemvalue="Application.Code13_movingCount" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +156,8 @@
       <workItem from="1586234485633" duration="17670000" />
       <workItem from="1586305999675" duration="6187000" />
       <workItem from="1586391372188" duration="14063000" />
-      <workItem from="1586443187985" duration="734000" />
+      <workItem from="1586443187985" duration="1102000" />
+      <workItem from="1586475340873" duration="11244000" />
     </task>
     <servers />
   </component>

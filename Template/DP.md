@@ -190,3 +190,89 @@ public int minDistance(String word1, String word2) {
         return dp[m][n];
     }
 ```
+## 打家劫舍问题
+### 打家劫舍I(房屋一排)
+![](https://upload-images.jianshu.io/upload_images/10460153-2fa859d98df20dd4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+//方法一：类似于股票问题，每个房间有两个状态：抢和不抢。定义dp[][]
+//方法二：
+private int[] memo;
+public int rob(int[] nums) {
+    //初始化备忘录
+    memo = new int[nums.length];
+    Arrays.fill(memo, -1);
+    //强盗从第0号房间开始抢劫
+    return dp(nums,0);
+}
+
+// 返回dp[start...]能抢到的最大值
+private int dp(int[] nums, int start) {
+    if(start >= nums.length){
+        return 0;
+    }
+    if(memo[start] != -1)
+        return memo[start];
+    //该位置有两种状态
+    //抢：则最大利益为nums[start]+dp[start + 2...]
+    //不抢：则最大利益为dp[start + 1...]
+    int res = Math.max(dp(nums,start + 1),nums[start] + dp(nums,start + 2));
+    memo[start] = res;
+    return res;
+}
+```
+### 打家劫舍Ⅱ(房屋围一圈)
+![](https://upload-images.jianshu.io/upload_images/10460153-48de2559411e9942.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+public int rob(int[] nums) {
+    if(nums == null || nums.length == 0){
+        return 0;
+    }
+    int n = nums.length;
+    if(n == 1){
+        return nums[0];
+    }
+    /*
+    * 首尾房间不能同时被抢，共三种情况
+    * 1.首尾都不抢
+    * 2.抢首不抢尾
+    * 3.抢尾不抢首
+    * 情况2、3对于房子的选择余地更大，房子里钱数非负，所以选择余地大的，最优决策结果不会小
+    * */
+    return Math.max(robRange(nums,0,n - 2),robRange(nums,1,n - 1));
+}
+
+// 仅计算闭区间[start,end]的最优结果
+private int robRange(int[] nums, int start, int end) {
+    int dp_i_1 = 0; //表示i+1位置最大利益
+    int dp_i_2 = 0; //表示i+2位置
+    int dp_i = 0;
+    for (int i = end; i >= start ; i--) {
+        dp_i = Math.max(dp_i_1,nums[i] + dp_i_2);
+        dp_i_2 = dp_i_1;
+        dp_i_1 = dp_i;
+    }
+    return dp_i;
+}
+```
+### 打家劫舍Ⅲ(二叉树排列)
+![](https://upload-images.jianshu.io/upload_images/10460153-2eaa04686a741d06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+//树形DP：计算每个节点打劫和不打劫的最大值，最后返回根节点最大值
+public int rob(TreeNode root){
+    int[] res = dp(root);
+    return Math.max(res[0],res[1]);
+}
+public int[] dp(TreeNode node){
+    if(node == null){
+        return new int[]{0,0};
+    }
+    int[] left = dp(node.left);
+    int[] right = dp(node.right);
+
+    //抢该节点，不抢子节点
+    int rob = node.val + left[0] + right[0];
+    //抢该节点，下家可抢可不抢
+    int not_rob = Math.max(left[0],left[1]) + Math.max(right[0],right[1]);
+    return new int[]{not_rob,rob};
+}
+```
