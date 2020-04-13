@@ -1,3 +1,4 @@
+[TOC]
 ## 链表问题总结
 
 单链表节点
@@ -23,7 +24,7 @@ public static class DoubleNode {
     }
 ```
 
-#### 1.链表反转(全部反转和部分反转)
+### 1.链表反转(全部反转和部分反转)
 ```
 迭代解决：时间复杂度O(N),空间复杂度O(1)
 递归解决：时间复杂度O(N),空间复杂度O(n)，递归将会使用隐式栈空间。递归深度可能会达到 n 层。
@@ -121,4 +122,78 @@ public class ReverseList {
     }
 }
 
+```
+### 合并k个排序链表
+![](https://upload-images.jianshu.io/upload_images/10460153-5a24ad8983de34e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+/*
+* 优先级队列：
+* 先将每个首结点组成大小为k的小根堆，每次取出堆头，再放入该节点的next节点
+* */
+public ListNode mergeKLists_1(ListNode[] lists) {
+    if(lists == null || lists.length == 0){
+        return null;
+    }
+    PriorityQueue<ListNode> pq = new PriorityQueue<>((o1,o2) -> o1.val - o2.val);
+    for (ListNode listnode : lists) {
+        if(listnode == null){
+            continue;
+        }
+        pq.add(listnode);
+    }
+    ListNode head = new ListNode(0);
+    ListNode cur = head;
+    while (!pq.isEmpty()){
+        ListNode node = pq.poll();
+        cur.next = node;
+        cur = cur.next;
+        if(node.next != null){
+            pq.add(node.next);
+        }
+    }
+    return head.next;
+}
+```
+```java
+//分治：
+public ListNode mergeKLists_2(ListNode[] lists) {
+    if(lists == null || lists.length == 0 ){
+        return null;
+    }
+    if(lists.length == 1){
+        return lists[0];
+    }
+    if(lists.length == 2){
+        return merge(lists[0],lists[1]);
+    }
+
+    int mid = lists.length / 2;
+    ListNode[] l1 = new ListNode[mid];
+    for (int i = 0; i < mid; i++) {
+        l1[i] = lists[i];
+    }
+
+    ListNode[] l2 = new ListNode[lists.length - mid];
+    for (int i = mid,j = 0; i < lists.length; i++) {
+        l2[j++] = lists[i];
+    }
+    return merge(mergeKLists_2(l1),mergeKLists_2(l2));
+}
+public ListNode merge(ListNode node1, ListNode node2){
+    if(node1 == null){
+        return node2;
+    }
+    if(node2 == null){
+        return node1;
+    }
+    ListNode head = null;
+    if(node1.val <= node2.val){
+        head = node1;
+        head.next = merge(node1.next,node2);
+    }else {
+        head = node2;
+        head.next = merge(node1,node2.next);
+    }
+    return head;
+}
 ```

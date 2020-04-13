@@ -13,20 +13,15 @@ public class Code23_MergeKLists {
         if(lists == null || lists.length == 0){
             return null;
         }
-        ListNode head = new ListNode(0);
-        ListNode cur = head;
-        PriorityQueue<ListNode> pq = new PriorityQueue<>(new Comparator<ListNode>() {
-            @Override
-            public int compare(ListNode o1, ListNode o2) {
-                return o1.val - o2.val;
-            }
-        });
-        for ( ListNode listnode : lists) {
+        PriorityQueue<ListNode> pq = new PriorityQueue<>((o1,o2) -> o1.val - o2.val);
+        for (ListNode listnode : lists) {
             if(listnode == null){
                 continue;
             }
             pq.add(listnode);
         }
+        ListNode head = new ListNode(0);
+        ListNode cur = head;
         while (!pq.isEmpty()){
             ListNode node = pq.poll();
             cur.next = node;
