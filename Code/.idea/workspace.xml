@@ -57,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Code445_addTwoNumbers">
     <configuration name="Code151_reverseWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code151_reverseWords" />
       <module name="holiday" />
@@ -73,6 +73,19 @@
     </configuration>
     <configuration name="Code22_generateParenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code22_generateParenthesis" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Code445_addTwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code445_addTwoNumbers" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -104,20 +117,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="skill" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="skill" />
-      <module name="holiday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code445_addTwoNumbers" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Code151_reverseWords" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Code22_generateParenthesis" />
-        <item itemvalue="Application.skill" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +165,8 @@
       <workItem from="1586443187985" duration="1102000" />
       <workItem from="1586475340873" duration="11847000" />
       <workItem from="1586602108165" duration="7505000" />
-      <workItem from="1586739493582" duration="6195000" />
+      <workItem from="1586739493582" duration="6846000" />
+      <workItem from="1586824588671" duration="6004000" />
     </task>
     <servers />
   </component>

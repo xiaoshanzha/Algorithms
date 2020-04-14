@@ -123,7 +123,7 @@ public class ReverseList {
 }
 
 ```
-### 合并k个排序链表
+### 2.合并k个排序链表
 ![](https://upload-images.jianshu.io/upload_images/10460153-5a24ad8983de34e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```java
 /*
@@ -193,6 +193,39 @@ public ListNode merge(ListNode node1, ListNode node2){
     }else {
         head = node2;
         head.next = merge(node1,node2.next);
+    }
+    return head;
+}
+```
+
+### 3.两链表相加
+![](https://upload-images.jianshu.io/upload_images/10460153-28f132f6bb881c5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    // 利用栈来存储
+    Stack<Integer> stack1 = new Stack<>();
+    Stack<Integer> stack2 = new Stack<>();
+    while (l1 != null){
+        stack1.push(l1.val);
+        l1 = l1.next;
+    }
+    while (l2 != null){
+        stack2.push(l2.val);
+        l2 = l2.next;
+    }
+
+    int carry = 0; //进位标志
+    ListNode head = null;
+    while (!stack1.isEmpty() || !stack2.isEmpty() || carry != 0){
+        int sum = carry;
+        sum += stack1.isEmpty() ? 0 : stack1.pop();
+        sum += stack2.isEmpty() ? 0 : stack2.pop();
+
+        //每次新建节点next节点指向head，然后改变head
+        ListNode node = new ListNode(sum % 10);
+        node.next = head;
+        head = node;
+        carry = sum / 10;
     }
     return head;
 }
