@@ -57,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code541_updateMatrix">
+  <component name="RunManager" selected="Application.Code56_merge">
     <configuration name="Code151_reverseWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code151_reverseWords" />
       <module name="holiday" />
@@ -97,6 +97,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Code56_merge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code56_merge" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WYHY.Main" />
       <module name="holiday" />
@@ -110,20 +123,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="holiday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code56_merge" />
         <item itemvalue="Application.Code541_updateMatrix" />
         <item itemvalue="Application.Code445_addTwoNumbers" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Code151_reverseWords" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +173,8 @@
       <workItem from="1586602108165" duration="7505000" />
       <workItem from="1586739493582" duration="6846000" />
       <workItem from="1586824588671" duration="6603000" />
-      <workItem from="1586910737207" duration="7442000" />
+      <workItem from="1586910737207" duration="7443000" />
+      <workItem from="1586996020291" duration="2575000" />
     </task>
     <servers />
   </component>
