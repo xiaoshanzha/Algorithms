@@ -72,3 +72,24 @@ public int[][] updateMatrix(int[][] matrix) {
     return res;
 }
 ```
+
+###  盛最多水的容器
+![](https://upload-images.jianshu.io/upload_images/10460153-609cff90200dab0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/10460153-54f30d16aa1e983d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+//其实质就是在移动的过程中不断消去不可能成为最大值的状态。
+public static int maxArea(int[] height) {
+    int start = 0;
+    int end = height.length - 1;
+    int Area = 0;
+    while (start < end){
+        Area = Math.max(Area,Math.min(height[start],height[end]) * (end - start));
+        if(Math.min(height[start],height[end]) == height[start]){
+            start++;
+        }else {
+            end--;
+        }
+    }
+    return Area;
+}
+```
