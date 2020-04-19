@@ -57,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Code466_getMaxRepetitions">
     <configuration name="Code09_isPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code09_isPalindrome" />
       <module name="holiday" />
@@ -97,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code56_merge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code56_merge" />
+    <configuration name="Code466_getMaxRepetitions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code466_getMaxRepetitions" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -125,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code466_getMaxRepetitions" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Code11_maxArea" />
         <item itemvalue="Application.Code09_isPalindrome" />
         <item itemvalue="Application.Code45_jump" />
-        <item itemvalue="Application.Code56_merge" />
       </list>
     </recent_temporary>
   </component>
@@ -177,6 +177,7 @@
       <workItem from="1586996020291" duration="2575000" />
       <workItem from="1587083895856" duration="6483000" />
       <workItem from="1587171618618" duration="11365000" />
+      <workItem from="1587273671267" duration="1939000" />
     </task>
     <servers />
   </component>
