@@ -93,3 +93,79 @@ public static int maxArea(int[] height) {
     return Area;
 }
 ```
+
+### 岛屿数量
+![](https://upload-images.jianshu.io/upload_images/10460153-f42c71a477c04b24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+/*
+* bfs :遍历一个位置所能到达的所有位置 改变状态,保证每个位置只会被感染一次
+* */
+//i,j代表当前位置，M,N分别为矩阵的行数和列数
+public void infect(char[][] m,int i,int j,int M,int N){
+    //越界或者位置上不是1，退出感染过程
+    if(i < 0 || i >= M || j < 0 || j >= N || m[i][j] != '1'){
+        return;
+    }
+    m[i][j] = '2';
+    infect(m,i - 1, j,M , N);
+    infect(m,i + 1, j,M , N);
+    infect(m,i , j - 1,M , N);
+    infect(m,i , j + 1,M , N);
+}
+public int numIslands(char[][] grid) {
+    if(grid == null || grid[0] == null){
+        return 0;
+    }
+    int M = grid.length;
+    int N = grid[0].length;
+    int num = 0;
+    for (int i = 0; i < M; i++) {
+        for (int j = 0; j < N; j++) {
+            if(grid[i][j] == '1'){
+                num++;
+                infect(grid,i,j,M,N);
+            }
+        }
+    }
+    return num;
+}
+```
+
+### 岛屿的最大面积
+![](https://upload-images.jianshu.io/upload_images/10460153-27df97e2c2f07ceb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+public int nums_2 = 0;
+int[][] grid = null;
+public int maxAreaOfIsland(int[][] grid) {
+    this.grid = grid;
+    if(grid == null || grid.length == 0){
+        return 0;
+    }
+    int max = 0 ;
+    for (int i = 0; i < grid.length; i++) {
+        for (int j = 0; j < grid[0].length; j++) {
+            if(grid[i][j] == 1){
+                int a = nums_2;
+                infect(i , j);
+                int nums = nums_2 - a;
+                max = Math.max(nums,max);
+            }
+        }
+    }
+    return max;
+}
+public void infect(int i ,int j){
+    if(i < 0 || i >= grid.length || j < 0 || j >= grid[0].length){
+        return;
+    }
+    if(grid[i][j] == 1){
+        nums_2++;
+        grid[i][j] = 2;
+        infect(i - 1,j);
+        infect(i + 1,j);
+        infect(i ,j - 1);
+        infect(i ,j + 1);
+    }
+    return;
+}
+```
