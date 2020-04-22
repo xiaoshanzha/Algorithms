@@ -1,6 +1,6 @@
 ## 栈和队列问题总结
 [toc]
-#### 1.栈实现队列，队列实现栈
+### 1.栈实现队列，队列实现栈
 ```java
 public class StackAndQueueConvert {
     /*
@@ -90,11 +90,11 @@ public class StackAndQueueConvert {
     }
 }
 ```
-#### 2.双端队列解决窗口问题
+### 2.双端队列(窗口问题最值问题)
+#### 滑动窗口最大值
+![](https://upload-images.jianshu.io/upload_images/10460153-4bb6448de93438b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```java
   /*
-    * 问题：生成窗口最大值数组：数组nums，窗口大小为k，返回所有大小为k的窗口最大值组成的数组
-    *
     * 思路：双端队列中存放数组值的索引，从前往后为数组值大到小； 遍历到arr[i]
     *       放入规则：1.如果队列为空，直接放
     *                2.如果不为空，取出当前队尾存放的下标，设为j
@@ -128,10 +128,9 @@ public class StackAndQueueConvert {
         return res;
     }
 ```
+#### 最大值减最小值小于等于num的子数组数量
 ```java
  /*
-    * 问题：最大值减最小值小于等于num的子数组数量
-    *
     * 思路：子数组类似于窗口问题，用两个双端队列，一个存大到小，一个存小到大
     *       窗口左边界先不动，改变右边界，直到不满足后，此时以左边界开头的子数组数量将全部得到
     *       然后左边界依次右移，
@@ -175,7 +174,7 @@ public class StackAndQueueConvert {
     }
 
 ```
-#### 3.单调栈结构
+### 3.单调栈结构
 ```java
 public class Monotonic_Stack_Structure {
     /*
@@ -251,10 +250,53 @@ public class Monotonic_Stack_Structure {
         return res;
     }
 }
+```
+#### 最大矩形
+![](https://upload-images.jianshu.io/upload_images/10460153-a3dfd86b8ce625ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+public int maximalRectangle(char[][] matrix) {
+    if(matrix == null || ( matrix.length == 0)){
+        return 0;
+    }
+    int maxArea = 0;
+    //height[i] 表示以第i行为底的情况下，每个位置往上连续是1的数量
+    int[] height = new int[matrix[0].length];
+    for (int i = 0; i < matrix.length; i++) {
+        for (int j = 0; j < matrix[0].length; j++) {
+            height[j] = matrix[i][j] == '0' ? 0 : height[j] + 1;
+        }
+        //以i行为底，将以上部分看作一个大的直方图，求最大矩形面积
+        maxArea = Math.max(largestRectangleArea(height),maxArea);
+    }
+    return maxArea;
+}
 
+//单调栈结构，找出每根柱子向左和向右能扩到的位置
+//实质就是找柱子左边和右边离他最近且小的位置，计算面积
+public int largestRectangleArea(int[] heights) {
+    Stack<Integer> stack = new Stack<>();
+    int maxArea = 0;
+    for (int i = 0; i < heights.length; i++) {
+        while(!stack.isEmpty() && heights[stack.peek()] >= heights[i]){
+            int j = stack.pop();
+            //l 表示 j柱子左边最近且小的柱子位置  ,此时i表示右边且近
+            int l = stack.isEmpty() ? -1 : stack.peek();
+            int curArea = (i - l -1) * heights[j];
+            maxArea = Math.max(maxArea,curArea);
+        }
+        stack.push(i);
+    }
+    while(!stack.isEmpty()){
+        int j = stack.pop();
+        int l = stack.isEmpty() ? -1 : stack.peek();
+        int curArea = (heights.length - l -1) * heights[j];
+        maxArea = Math.max(maxArea,curArea);
+    }
+    return maxArea;
+}
 ```
 
-#### 4.判断括号合法性
+### 4.判断括号合法性
 ```java
 /*
 * 处理一种括号：假设字符串中只有圆括号

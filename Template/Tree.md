@@ -79,6 +79,54 @@ public List<String> generateParenthesis1(int n) {
     return res;
 }
 ```
+### 二叉树的右视图
+![](https://upload-images.jianshu.io/upload_images/10460153-3c5d0f284798bd01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+//BFS 层序遍历，将每层的最后结点值加入
+public List<Integer> rightSideView(TreeNode root) {
+    List<Integer> list = new ArrayList<>();
+    if(root == null){
+        return list;
+    }
+    Queue<TreeNode> queue = new LinkedList<>();
+    queue.offer(root);
+    TreeNode node = null;
+    while (!queue.isEmpty()){
+        int size = queue.size();
+        for (int i = 0; i < size; i++) {
+            node = queue.poll();
+            if(node.left != null){
+                queue.offer(node.left);
+            }
+            if(node.right != null){
+                queue.offer(node.right);
+            }
+            if(i == size - 1){
+                list.add(node.val);
+            }
+        }
+    }
+    return list;
+}
+```
+```java
+//DFS   根右左，保证每层遍历到的首结点为该层的最右节点
+public List<Integer> rightSideView(TreeNode root) {
+    List<Integer> res = new ArrayList<>();
+    dfs(res, root, 0);
+    return res;
+}
+private void dfs(List<Integer> res, TreeNode node, int level) {
+    if(node != null) {
+        //表示 该层还没有节点加入
+        if(res.size() == level) {
+            res.add(node.val);
+        }
+        dfs(res, node.right, level + 1);
+        dfs(res, node.left, level + 1);
+    }
+}
+```
 ## 树形DP
 ### 树形DP前提和套路
 ```

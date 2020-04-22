@@ -57,9 +57,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code733_floodFill">
-    <configuration name="Code11_maxArea" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code11_maxArea" />
+  <component name="RunManager" selected="Application.Code199_rightSideView">
+    <configuration name="Code199_rightSideView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code199_rightSideView" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -125,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code199_rightSideView" />
         <item itemvalue="Application.Code733_floodFill" />
         <item itemvalue="Application.Code463_islandPerimeter" />
         <item itemvalue="Application.Code466_getMaxRepetitions" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Code11_maxArea" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +179,7 @@
       <workItem from="1587171618618" duration="11365000" />
       <workItem from="1587273671267" duration="1939000" />
       <workItem from="1587341306014" duration="5846000" />
-      <workItem from="1587430034242" duration="2058000" />
+      <workItem from="1587430034242" duration="7426000" />
     </task>
     <servers />
   </component>
