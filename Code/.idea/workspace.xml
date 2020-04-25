@@ -13,6 +13,7 @@
       <list>
         <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -57,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code51_reversePairs">
+  <component name="RunManager" selected="Application.Code40_combinationSum2">
     <configuration name="Code08_11_waysToChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.Interview.Code08_11_waysToChange" />
       <module name="holiday" />
@@ -71,8 +72,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code199_rightSideView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code199_rightSideView" />
+    <configuration name="Code39_combinationSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code39_combinationSum" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Code40_combinationSum2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code40_combinationSum2" />
+      <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Code46_permute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code46_permute" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -97,39 +124,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code733_floodFill" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code733_floodFill" />
-      <module name="holiday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LeetCode.ordinary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MT.Main" />
-      <module name="holiday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MT.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code40_combinationSum2" />
+        <item itemvalue="Application.Code39_combinationSum" />
+        <item itemvalue="Application.Code46_permute" />
         <item itemvalue="Application.Code51_reversePairs" />
         <item itemvalue="Application.Code08_11_waysToChange" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Code199_rightSideView" />
-        <item itemvalue="Application.Code733_floodFill" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +183,7 @@
       <workItem from="1587430034242" duration="8002000" />
       <workItem from="1587639455912" duration="9857000" />
       <workItem from="1587739383711" duration="1556000" />
+      <workItem from="1587786118552" duration="11181000" />
     </task>
     <servers />
   </component>

@@ -127,6 +127,192 @@ private void dfs(List<Integer> res, TreeNode node, int level) {
     }
 }
 ```
+## 回溯
+### 回溯框架
+![](https://upload-images.jianshu.io/upload_images/10460153-af43de73f7f97025.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/10460153-f598d5a8f9fd6e34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+/*
+* 回溯：决策树的遍历过程，搞清以下三名词
+*       路径：已经做出的选择
+*       选择列表：当前可以做的选择
+*       结束条件：到达决策树底层，无法再做选择的条件
+* 回溯框架核心： for 循环里面的递归，在递归调用之前「做选择」，在递归调用之后「撤销选择」
+* */
+result = [];
+void backtrack(路径，选择列表){
+    if(结束条件){
+        result.add(路径);
+        return;
+    }
+
+    for 选择 in 选择列表{
+        做选择；
+        backtrack(路径，选择列表);
+        撤销选择；
+    }
+} 
+```
+### 全排列(无重复数)
+![](https://upload-images.jianshu.io/upload_images/10460153-fbee064dea769c5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](https://upload-images.jianshu.io/upload_images/10460153-52eefacd9b3495cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+List<List<Integer>> res = new LinkedList<>();
+public List<List<Integer>> permute(int[] nums) {
+    List<Integer> track = new LinkedList<>();
+
+    // visited标志该位置的元素是否已经被选择
+    int[] visited = new int[nums.length];
+
+    // nums 为选择列表，track为路径
+    backtrack(nums,track,visited);
+
+    return res;
+}
+
+private void backtrack(int[] nums, List<Integer> track,int[] visited) {
+    //触发结束条件
+    if(nums.length == track.size()){
+        //注意此处不能写 res.add(track)；
+        //因为track这个变量所指向的对象在递归的过程中只有一份，深搜完回到根节点，所以这个变量回到根节点以后都为空
+        res.add(new LinkedList<>(track));
+        return;
+    }
+    for (int i = 0; i < nums.length; i++) {
+        if(visited[i] == 1)
+            continue;
+        visited[i] = 1;
+        track.add(nums[i]);
+        backtrack(nums,track,visited);
+        visited[i] = 0;
+        track.remove(track.size() - 1);
+    }
+}
+```
+### 全排列(含重复数)
+![](https://upload-images.jianshu.io/upload_images/10460153-352dc0d04594d1bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/10460153-cc76e41bd0dae5b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+List<List<Integer>> res = new LinkedList<>();
+public List<List<Integer>> permuteUnique(int[] nums) {
+    List<Integer> track = new LinkedList<>();
+    int[] visited = new int[nums.length];
+    //将nums排序是以下剪枝的前提条件(判断下一个访问的位置是否和刚才被撤销选择的数相等)
+    Arrays.sort(nums);
+
+    // nums 为选择列表，track为路径
+    backtrack(nums,track,visited);
+    return res;
+}
+
+private void backtrack(int[] nums, List<Integer> track,int[] visited) {
+    //触发结束条件
+    if(nums.length == track.size()){
+        //注意此处不能写 res.add(track)；
+        //因为track这个变量所指向的对象在递归的过程中只有一份，深搜完回到根节点，所以这个变量回到根节点以后都为空
+        res.add(new LinkedList<>(track));
+        return;
+    }
+    for (int i = 0; i < nums.length; i++) {
+        if(visited[i] == 1 )
+            continue;
+        //剪枝 : 之前的该数刚刚被撤销选择，所以剪枝（前提条件 : nums数组已排序）
+        if(i > 0 && nums[i] == nums[i - 1] && visited[i - 1] == 0){
+            continue;
+        }
+        visited[i] = 1;
+        track.add(nums[i]);
+        backtrack(nums,track,visited);
+        visited[i] = 0;
+        track.remove(track.size() - 1);
+    }
+}
+```
+### 组合总和
+![](https://upload-images.jianshu.io/upload_images/10460153-6120b6f904257fe2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](https://upload-images.jianshu.io/upload_images/10460153-1fd2e9d6739a8c52.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+public List<List<Integer>> combinationSum(int[] candidates, int target) {
+    List<List<Integer>> res = new LinkedList<>();
+    List<Integer> path = new LinkedList<>();
+    int cur = 0;
+    /*
+    * 排序主要的作用是剪枝，让程序在深搜的过程中尽量排除掉不能搜索到结果的分支，以节约时间。
+    * 在回溯搜索这种时间复杂度很大的算法中，先排序再剪枝有些时候是有必要的。
+    * */
+    Arrays.sort(candidates);
+    backtrack(res,path,candidates,target,cur,0);
+
+    for (List list : res) {
+        System.out.println(list.toString());
+    }
+    return res;
+}
+/*
+* begin: 本轮搜索的起点下标 , 用来去重
+* */
+private void backtrack(List<List<Integer>> res, List<Integer> path, int[] candidates, int target,int cur,int begin) {
+    if(cur == target){
+        res.add(new LinkedList<>(path));
+        return;
+    }
+    for (int i = begin; i < candidates.length; i++) {
+        if(cur > target){
+            return;
+        }
+        path.add(candidates[i]);
+        backtrack(res,path,candidates,target,cur + candidates[i],i);
+        path.remove(path.size() - 1);
+    }
+}
+```
+### 组合总和Ⅱ
+![](https://upload-images.jianshu.io/upload_images/10460153-60ff6f6d95a24a40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/10460153-79e96934700345ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+    List<List<Integer>> res = new LinkedList<>();
+    List<Integer> path = new LinkedList<>();
+    int cur = 0;
+    /*
+        * 排序主要的作用是剪枝，让程序在深搜的过程中尽量排除掉不能搜索到结果的分支，以节约时间。
+        * 在回溯搜索这种时间复杂度很大的算法中，先排序再剪枝有些时候是有必要的。
+        * */
+    Arrays.sort(candidates);
+    backtrack(res,path,candidates,target,cur,0);
+
+    for (List list : res) {
+        System.out.println(list.toString());
+    }
+    return res;
+}
+
+/*
+* begin: 本轮搜索的起点下标 , 用来去重
+* */
+private void backtrack(List<List<Integer>> res, List<Integer> path, int[] candidates, int target,int cur,int begin) {
+    System.out.println(path.toString());
+    if(cur == target){
+        res.add(new LinkedList<>(path));
+        return;
+    }
+    for (int i = begin; i < candidates.length; i++) {
+        //大剪枝
+        if(cur > target){
+            return;
+        }
+        //小剪枝(此处为重点)
+        if(i > begin && candidates[i] == candidates[i-1]){
+            continue;
+        }
+        path.add(candidates[i]);
+        backtrack(res,path,candidates,target,cur + candidates[i],i+1);
+        path.remove(path.size() - 1);
+    }
+}
+```
 ## 树形DP
 ### 树形DP前提和套路
 ```
