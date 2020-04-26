@@ -1,8 +1,6 @@
 package LeetCode.ordinary;
 
 import LeetCode.ordinary.Base.ListNode;
-
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class Code23_MergeKLists {
