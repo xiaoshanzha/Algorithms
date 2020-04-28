@@ -13,6 +13,9 @@ public class Code260_singleNumber {
     * new_mark = mark & (-mark) ,再次进行遍历，num & new_mark, 将该位置为0和1的num分开(可以保证这两个数分在不同的组，且相同的数在同一组)
     * 所以最后 分开的两组 异或结果分别为 B，C
     * */
+
+
+
     public int[] singleNumber(int[] nums) {
         int mark = 0;
         for (int num: nums) {
