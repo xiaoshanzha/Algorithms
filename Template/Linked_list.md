@@ -230,3 +230,27 @@ public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     return head;
 }
 ```
+### 快乐数(链表环问题)
+![](https://upload-images.jianshu.io/upload_images/10460153-058fac0b949c0f12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+// 每个数会根据 各位平方和 指向另一个数,
+// 所以从任意数字开始进行各位平方和 的迭代操作，就相当于在链表上游走。
+// 如果 无限循环 但始终变不到 1，那说明肯定是链表游走到了环。
+public int squareSum(int n){
+    int sum = 0;
+    while(n > 0){
+        int r = n % 10;
+        sum += r * r;
+        n /= 10; 
+    }
+    return sum;
+}
+public boolean isHappy(int n) {
+    int slow = n , fast = squareSum(n);
+    while (slow != fast){
+        slow = squareSum(slow);
+        fast = squareSum(squareSum(fast));
+    }
+    return slow == 1;
+}
+```
