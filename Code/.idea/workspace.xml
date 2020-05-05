@@ -58,9 +58,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code202_isHappy">
-    <configuration name="Code202_isHappy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code202_isHappy" />
+  <component name="RunManager" selected="Application.Code3_lengthOfLongestSubstring">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BinarySearch" />
+      <module name="holiday" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Code3_lengthOfLongestSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code3_lengthOfLongestSubstring" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -72,8 +79,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code39_combinationSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code39_combinationSum" />
+    <configuration name="Code438_findAnagrams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code438_findAnagrams" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +92,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code40_combinationSum2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code40_combinationSum2" />
+    <configuration name="Code567_checkInclusion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code567_checkInclusion" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -98,25 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code46_permute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code46_permute" />
+    <configuration name="Code76_minWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code76_minWindow" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="LeetCode.ordinary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KS.Main" />
-      <module name="holiday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="KS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Code202_isHappy" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Code40_combinationSum2" />
-        <item itemvalue="Application.Code39_combinationSum" />
-        <item itemvalue="Application.Code46_permute" />
+        <item itemvalue="Application.Code3_lengthOfLongestSubstring" />
+        <item itemvalue="Application.Code438_findAnagrams" />
+        <item itemvalue="Application.Code567_checkInclusion" />
+        <item itemvalue="Application.Code76_minWindow" />
+        <item itemvalue="Application.BinarySearch" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +186,7 @@
       <workItem from="1588237882356" duration="3343000" />
       <workItem from="1588293325979" duration="5502000" />
       <workItem from="1588390068585" duration="5546000" />
-      <workItem from="1588474547252" duration="4669000" />
+      <workItem from="1588474547252" duration="21082000" />
     </task>
     <servers />
   </component>

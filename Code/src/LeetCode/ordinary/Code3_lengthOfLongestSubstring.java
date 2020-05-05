@@ -28,7 +28,26 @@ public class Code3_lengthOfLongestSubstring {
         return Math.max(length,cur - left);
     }
 
+    public static int lengthOfLongestSubstring1(String s) {
+        HashMap<Character,Integer> window = new HashMap<>();
+        int left = 0 , right = 0;
+        int res = 0;
+        while(right < s.length()){
+            char c = s.charAt(right);
+            window.put(c,window.getOrDefault(c,0) + 1);
+            right++;
+            while (window.get(c) > 1){
+                char d = s.charAt(left);
+                left++;
+                //窗口内数据进行更新
+                window.put(d,window.get(d) - 1);
+            }
+            res = Math.max(res,right - left);
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
-        System.out.println(lengthOfLongestSubstring("pwwkew"));
+        System.out.println(lengthOfLongestSubstring1("pwwkew"));
     }
 }

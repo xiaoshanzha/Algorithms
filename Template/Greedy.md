@@ -1,4 +1,5 @@
 ## 贪心算法
+[TOC]
 ### 1.跳跃游戏(是否可到达最后位置)
 ![](https://upload-images.jianshu.io/upload_images/10460153-2f2ad82c924b8e0b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```java
