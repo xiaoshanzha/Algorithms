@@ -1,67 +1,94 @@
 [TOC]
 ## 矩阵问题
-###  盛最多水的容器
-![](https://upload-images.jianshu.io/upload_images/10460153-609cff90200dab0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![](https://upload-images.jianshu.io/upload_images/10460153-54f30d16aa1e983d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+### 左右指针
+#### 反转数组
 ```java
-//其实质就是在移动的过程中不断消去不可能成为最大值的状态。
-public static int maxArea(int[] height) {
-    int start = 0;
-    int end = height.length - 1;
-    int Area = 0;
-    while (start < end){
-        Area = Math.max(Area,Math.min(height[start],height[end]) * (end - start));
-        if(Math.min(height[start],height[end]) == height[start]){
-            start++;
-        }else {
-            end--;
-        }
+void reverse(int[] nums){
+    int left = 0;
+    int right = nums.length - 1;
+    while (left < right){
+        int temp = nums[left];
+        nums[left] = nums[right];
+        nums[right] = temp;
+        left++;
+        right--;
     }
-    return Area;
 }
 ```
-### 统计[优美子数组]数量(双指针窗口问题)
-![](https://upload-images.jianshu.io/upload_images/10460153-21ce8a8bcec2b2d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+#### 二分查找
+##### 数组中寻找某数的最左边界
 ```java
-public int numberOfSubarrays(int[] nums, int k) {
-    int left = 0, right = 0, oddCnt = 0, res = 0;
-    while (right < nums.length) {
-        // 右指针先走，每遇到一个奇数则 oddCnt++。
-        if ((nums[right++] & 1) == 1) {
-            oddCnt++;
-        }
-        //  若当前滑动窗口 [left, right) 中有 k 个奇数了，进入此分支统计当前滑动窗口中的优美子数组个数。
-        if (oddCnt == k) {
-            // 先将滑动窗口的右边界向右拓展，直到遇到下一个奇数（或出界）
-            // rightEvenCnt 即为第 k 个奇数右边的偶数的个数
-            int tmp = right;
-            while (right < nums.length && (nums[right] & 1) == 0) {
-                right++;
-            }
-            int rightEvenCnt = right - tmp;
-            // leftEvenCnt 即为第 1 个奇数左边的偶数的个数
-            int leftEvenCnt = 0;
-            while ((nums[left] & 1) == 0) {
-                leftEvenCnt++;
-                left++;
-            }
-            // 第 1 个奇数左边的 leftEvenCnt 个偶数都可以作为优美子数组的起点
-            // (因为第1个奇数左边可以1个偶数都不取，所以起点的选择有 leftEvenCnt + 1 种）
-            // 第 k 个奇数右边的 rightEvenCnt 个偶数都可以作为优美子数组的终点
-            // (因为第k个奇数右边可以1个偶数都不取，所以终点的选择有 rightEvenCnt + 1 种）
-            // 所以该滑动窗口中，优美子数组左右起点的选择组合数为 (leftEvenCnt + 1) * (rightEvenCnt + 1)
-            res += (leftEvenCnt + 1) * (rightEvenCnt + 1);
-            // 此时 left 指向的是第 1 个奇数，因为该区间已经统计完了，因此 left 右移一位，oddCnt--
-            left++;
-            oddCnt--;
-        }
-    }
-    return res;
-}
-```
+/*
+* 二分查找：不要出现else,而是把else if写清楚，计算mid时要防止溢出
+* */
 
-### 滑动窗口问题
-#### 最小覆盖子串
+/*
+* 寻找一个数的左边界:
+* 存在返回最左边界的索引，不存在返回-1
+*
+* 搜索区间[left,right)左闭右开，
+* 所以while(left < right),并且left = mid + 1,right = mid;
+*
+* 因为要找最左侧边界，所以相等时不立即返回，而是收紧右边界
+* */
+private static int left_bound(int[] nums,int target){
+    if(nums.length == 0){
+        return -1;
+    }
+    int left = 0;
+    int right = nums.length;
+
+    while (left < right){
+        int mid = (left + right) / 2;
+        if(nums[mid] == target){
+            right = mid;
+        }else if(nums[mid] < target){
+            left = mid + 1;
+        }else if(nums[mid] > target){
+            right = mid;
+        }
+    }
+    //target比所有数都大
+    if(left == nums.length){
+        return -1;
+    }
+    return nums[left] == target ? left : -1;
+}
+```
+##### 数组中寻找某数的最右边界
+```java
+/*
+* 寻找一个数的右边界:
+* 存在返回最右边界的索引，不存在返回-1
+*
+* 跟找左边界不同的是，相同时收紧左边界left = mid + 1；
+* 所以无论返回left还是right，必须减一
+* */
+private static int right_bound(int[] nums,int target){
+if(nums.length == 0){
+    return -1;
+}
+int left = 0;
+int right = nums.length;
+
+while (left < right){
+    int mid = (left + right) / 2;
+    if(nums[mid] == target){
+        left = mid + 1;
+    }else if(nums[mid] < target){
+        left = mid + 1;
+    }else if(nums[mid] > target){
+        right = mid;
+    }
+}
+if(left == 0){
+    return -1;
+}
+return nums[left - 1] == target ? ( left - 1 ) : -1;
+}
+```
+#### 滑动窗口问题
+##### 最小覆盖子串
 ![](https://upload-images.jianshu.io/upload_images/10460153-0957a64d49393055.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```java
 /*
@@ -121,7 +148,7 @@ public String minWindow(String s, String t) {
     return minLen == Integer.MAX_VALUE ? "" : s.substring(start,end);
 }
 ```
-#### 字符串的排列
+##### 字符串的排列
 ![](https://upload-images.jianshu.io/upload_images/10460153-7f1468261e9ef3b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```java
 /*
@@ -145,7 +172,7 @@ if(((right - left) == s1.length()) && count == needs.size()){
     return true;
 }
 ```
-#### 无重复字符的最长子串
+##### 无重复字符的最长子串
 ![](https://upload-images.jianshu.io/upload_images/10460153-a9723946e7459207.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```java
 public int lengthOfLongestSubstring(String s) {
@@ -163,6 +190,65 @@ public int lengthOfLongestSubstring(String s) {
             window.put(d,window.get(d) - 1);
         }
         res = Math.max(res,right - left);
+    }
+    return res;
+}
+```
+###  盛最多水的容器
+![](https://upload-images.jianshu.io/upload_images/10460153-609cff90200dab0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/10460153-54f30d16aa1e983d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+//其实质就是在移动的过程中不断消去不可能成为最大值的状态。
+public static int maxArea(int[] height) {
+    int start = 0;
+    int end = height.length - 1;
+    int Area = 0;
+    while (start < end){
+        Area = Math.max(Area,Math.min(height[start],height[end]) * (end - start));
+        if(Math.min(height[start],height[end]) == height[start]){
+            start++;
+        }else {
+            end--;
+        }
+    }
+    return Area;
+}
+```
+### 统计[优美子数组]数量(双指针窗口问题)
+![](https://upload-images.jianshu.io/upload_images/10460153-21ce8a8bcec2b2d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+public int numberOfSubarrays(int[] nums, int k) {
+    int left = 0, right = 0, oddCnt = 0, res = 0;
+    while (right < nums.length) {
+        // 右指针先走，每遇到一个奇数则 oddCnt++。
+        if ((nums[right++] & 1) == 1) {
+            oddCnt++;
+        }
+        //  若当前滑动窗口 [left, right) 中有 k 个奇数了，进入此分支统计当前滑动窗口中的优美子数组个数。
+        if (oddCnt == k) {
+            // 先将滑动窗口的右边界向右拓展，直到遇到下一个奇数（或出界）
+            // rightEvenCnt 即为第 k 个奇数右边的偶数的个数
+            int tmp = right;
+            while (right < nums.length && (nums[right] & 1) == 0) {
+                right++;
+            }
+            int rightEvenCnt = right - tmp;
+            // leftEvenCnt 即为第 1 个奇数左边的偶数的个数
+            int leftEvenCnt = 0;
+            while ((nums[left] & 1) == 0) {
+                leftEvenCnt++;
+                left++;
+            }
+            // 第 1 个奇数左边的 leftEvenCnt 个偶数都可以作为优美子数组的起点
+            // (因为第1个奇数左边可以1个偶数都不取，所以起点的选择有 leftEvenCnt + 1 种）
+            // 第 k 个奇数右边的 rightEvenCnt 个偶数都可以作为优美子数组的终点
+            // (因为第k个奇数右边可以1个偶数都不取，所以终点的选择有 rightEvenCnt + 1 种）
+            // 所以该滑动窗口中，优美子数组左右起点的选择组合数为 (leftEvenCnt + 1) * (rightEvenCnt + 1)
+            res += (leftEvenCnt + 1) * (rightEvenCnt + 1);
+            // 此时 left 指向的是第 1 个奇数，因为该区间已经统计完了，因此 left 右移一位，oddCnt--
+            left++;
+            oddCnt--;
+        }
     }
     return res;
 }

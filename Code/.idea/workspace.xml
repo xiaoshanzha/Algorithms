@@ -58,10 +58,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code3_lengthOfLongestSubstring">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BinarySearch" />
+  <component name="RunManager" selected="Application.Code04_findMedianSortedArrays">
+    <configuration name="Code04_findMedianSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code04_findMedianSortedArrays" />
       <module name="holiday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.ordinary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code04_findMedianSortedArrays" />
         <item itemvalue="Application.Code3_lengthOfLongestSubstring" />
         <item itemvalue="Application.Code438_findAnagrams" />
         <item itemvalue="Application.Code567_checkInclusion" />
         <item itemvalue="Application.Code76_minWindow" />
-        <item itemvalue="Application.BinarySearch" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +192,7 @@
       <workItem from="1588237882356" duration="3343000" />
       <workItem from="1588293325979" duration="5502000" />
       <workItem from="1588390068585" duration="5546000" />
-      <workItem from="1588474547252" duration="21082000" />
+      <workItem from="1588474547252" duration="27704000" />
     </task>
     <servers />
   </component>

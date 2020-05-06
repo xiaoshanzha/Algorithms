@@ -23,8 +23,79 @@ public static class DoubleNode {
         }
     }
 ```
+### 快慢指针
+#### 找链表的中点
+```java
+/*
+* 找链表的中点。链表的归并排序
+* 链表的长度为奇数时，slow恰巧在中点位置，长度是偶数，slow为中间偏右
+* */
+ListNode MidNode(ListNode head){
+    ListNode fast,slow;
+    fast = slow = head;
+    while(fast != null && fast.next != null){
+        fast = fast.next.next;
+        slow = slow.next;
+    }
+    return slow;
+}
+```
+#### 寻找链表的倒数第k个元素
+```java
+ListNode KthNode(ListNode head , int k){
+    ListNode slow,fast;
+    slow = fast = head;
+    while (k-- > 0){
+        fast = fast.next;
+    }
+    while (fast != null){
+        slow = slow.next;
+        fast = fast.next;
+    }
+    return slow;
+}
+```
+#### 判断链表是否有环
+```java
+boolean hasCycle(ListNode head){
+    ListNode fast,slow;
+    fast = slow = head;
+    while (fast != null && fast.next != null){
+        fast = fast.next.next;
+        slow = slow.next;
 
-### 1.链表反转(全部反转和部分反转)
+        if(slow == fast){
+            return true;
+        }
+    }
+    return false;
+}
+```
+#### 链表有环，返回环的起始位置
+```java
+/*
+* 解释：第一次相遇时，假设慢指针slow走了k步，则fast一定走了2k步。多走了k步(环的长度)
+*       设相遇点距环的起点距离为m,则环的起点距头结点k - m, 相遇点转一圈再到环的起点距离也为 k - m;
+* */
+ListNode EnterCircle(ListNode head){
+    ListNode fast,slow;
+    fast = slow = head;
+    while(fast != null && fast.next != null){
+        fast = fast.next.next;
+        slow = slow.next;
+        if(fast == slow){
+            break;
+        }
+    }
+    slow = head;
+    while(slow != fast){
+        fast = fast.next;
+        slow = slow.next;
+    }
+    return slow;
+}
+```
+### 链表反转(全部反转和部分反转)
 ```
 迭代解决：时间复杂度O(N),空间复杂度O(1)
 递归解决：时间复杂度O(N),空间复杂度O(n)，递归将会使用隐式栈空间。递归深度可能会达到 n 层。
@@ -123,7 +194,7 @@ public class ReverseList {
 }
 
 ```
-### 2.合并k个排序链表
+### 合并k个排序链表
 ![](https://upload-images.jianshu.io/upload_images/10460153-5a24ad8983de34e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```java
 /*
@@ -198,7 +269,7 @@ public ListNode merge(ListNode node1, ListNode node2){
 }
 ```
 
-### 3.两链表相加
+### 两链表相加
 ![](https://upload-images.jianshu.io/upload_images/10460153-28f132f6bb881c5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```java
 public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
