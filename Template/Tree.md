@@ -1,5 +1,272 @@
 [TOC]
 # 树
+## 二叉树框架
+```java
+//明确一个节点要做的事，剩下扔给框架
+void traverse(TreeNode root){
+    // root节点需要做什么，在这里做，剩下不用root操心
+    traverse(root.left);
+    traverse(root.right);
+}
+
+// eg：二叉树所有节点值加一
+void plusOne(TreeNode root){
+    if(root == null){
+        return;
+    }
+    root.val += 1;
+    plusOne(root.left);
+    plusOne(root.right);
+}
+```
+### 判断两棵树是否相同
+```java
+public boolean isSame(TreeNode a, TreeNode b){
+    // 都为空显然相同
+    if(a == null && b == null){
+        return true;
+    }
+    //一个空，一个非空，显然不同
+    if(a == null || b == null){
+        return false;
+    }
+    //两个非空，但val不同也不可
+    if(a.val != b.val){
+        return false;
+    }
+    // a节点和b节点比较完，开始比较两个节点的左子树和右子树
+    return isSame(a.left,b.left) && isSame(a.right,b.right);
+}
+```
+### 判断一个树是不是另一个树的子树
+![](https://upload-images.jianshu.io/upload_images/10460153-ca00748289ea5b0e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+//递归
+public boolean isSubtree(TreeNode s, TreeNode t) {
+    if(t == null){
+        return true;
+    }
+    if(s == null){
+        return false; //此处t不为null，只要s为null，肯定是false
+    }
+    //用isSame()判断两树是否相同
+    return isSame(s,t) || isSubtree(s.left,t) || isSubtree(s.right,t);
+}
+```
+## 前中后序遍历
+### 递归
+```java
+/*
+* 实现二叉树的先序、中序、后序遍历，包括递归方式和非递归方式
+* 先序：根左右   中序：左根右   后序：左右根
+* eg:        1
+*          2   3
+*         4 5 6 7
+* 递归：实际访问上树节点顺序：先访问根节点，再访问左子树，若无左子树，回到根节点，访问右子树，若无右，回到根。
+*       1，2，4，4，4，2，5，5，5，2，1，3，6，6，6，3，7，7，7，3，1
+*       每个节点都会被访问3次，如果将打印的动作放在第一次访问该节点时，为先序，第二次为中序，第三次为后序
+*/
+private static void preOrderRecur(Node head){
+    if(head == null){
+        return;
+    }
+    System.out.print(head.value + " ");
+    preOrderRecur(head.left);
+    preOrderRecur(head.right);
+}
+private static void InOrderRecur(Node head){
+    if(head == null){
+        return;
+    }
+    InOrderRecur(head.left);
+    System.out.print(head.value + " ");
+    InOrderRecur(head.right);
+}
+private static void PosOrderRecur(Node head){
+    if(head == null){
+        return;
+    }
+    PosOrderRecur(head.left);
+    PosOrderRecur(head.right);
+    System.out.print(head.value + " ");
+}
+```
+### 非递归
+```java
+/* 非递归：先序：1.申请一个新栈，将头结点head压入栈中
+*               2.从栈中弹出栈顶节点，打印该节点值，再将节点的右孩子(不为空的话)压入栈中，
+*                 最后将左孩子(不为空的话)压入栈中。
+*               3.重复2过程，直到栈为空。
+*         中序：1.申请一个栈，初始时，令cur = head；
+*               2.先把cur节点压入栈中，对以cur节点为头的整棵树来说，依次把左边界压入栈中，
+*                 即cur = cur.left,依次重复该步骤，直到发现cur为空；
+*               3.此时从栈中弹出一个节点，打印该节点，(保证每次取出的都是未打印部分最左部分的数)
+*                 并让cur = cur.right，重复步骤2；
+*               4.当栈为空时，结束
+*         后序：和先序思路一样，先序要求：根左右， 后序要求：左右根
+*               先序进栈时，先压右 再压左。 如果先压左再压右，即可实现根右左。
+*               然后将前序打印的时机换为进入一个新栈，最后打印新栈的节点
+* */
+private static void PreOrderUnRecur(Node head){
+    System.out.print("pre-order: ");
+    if(head == null){
+        return;
+    }
+    Stack<Node> stack = new Stack<>();
+    stack.push(head);
+    Node cur = null;
+    while(!stack.isEmpty()){
+        cur = stack.pop();
+        System.out.print(cur.value + " ");
+        if(cur.right != null){
+            stack.push(cur.right);
+        }
+        if(cur.left != null){
+            stack.push(cur.left);
+        }
+    }
+    System.out.println();
+}
+
+private static void InOrderUnRecur(Node head){
+    System.out.print("In-order: ");
+    if(head == null){
+        return;
+    }
+    Stack<Node> stack = new Stack<>();
+    Node cur = head;
+    Node node = null;
+    while(!stack.isEmpty() || cur != null){
+        if(cur != null){
+            stack.push(cur);
+            cur = cur.left;
+        }else {
+            node = stack.pop();
+            System.out.print(node.value + " ");
+            cur = node.right;
+        }
+    }
+    System.out.println();
+}
+private static void PosOrderUnRecur(Node head){
+    System.out.print("Pos-order: ");
+    if(head == null){
+        return;
+    }
+    Stack<Node> stack = new Stack<>();
+    Stack<Node> new_stack = new Stack<>();
+    stack.push(head);
+    Node cur = null;
+    while(!stack.isEmpty()){
+        cur = stack.pop();
+        new_stack.push(cur);
+        if(cur.left != null){
+            stack.push(cur.left);
+        }
+        if(cur.right != null){
+            stack.push(cur.right);
+        }
+    }
+    while (!new_stack.isEmpty()){
+        System.out.print(new_stack.pop().value + " ");
+    }
+    System.out.println();
+}
+```
+## BST
+### 判断二叉搜索树
+```java
+//root需要和整个左子树和整个右子树所有节点进行比较
+boolean isValidBST(TreeNode root){
+    //通过增加函数参数列表，在参数中携带额外的信息
+    return isValidBST(root,null,null);
+}
+
+boolean isValidBST(TreeNode root, TreeNode min, TreeNode max) {
+    if(root == null){
+        return true;
+    }
+    if(min != null && root.val <= min.val){
+        return false;
+    }
+    if(max != null && root.val >= max.val){
+        return false;
+    }
+    return isValidBST(root.left,min,root) && isValidBST(root.right,root,max);
+}
+```
+### BST中查找一个数是否存在
+```java
+//不需要递归的搜索两边，利用左小右大特性排除一边
+boolean isInBST(TreeNode root,int target){
+    if(root == null){
+        return false;
+    }
+    if(root.val == target){
+        return true;
+    }
+    if(root.val < target){
+        return isInBST(root.right,target);
+    }
+    return isInBST(root.left,target);
+}
+```
+### BST中插入一个数
+```java
+//涉及到“改”，函数就要返回TreeNode类型，并且对递归调用的返回值进行接收
+TreeNode insertIntoBST(TreeNode root,int var){
+    if(root == null){
+        return new TreeNode(var);
+    }
+    /*if(root.val == var){
+        //BST一般不会插入已存在的元素
+    }*/
+    if(root.val < var){
+        root.right = insertIntoBST(root.right,var);
+    }
+    if(root.val > var){
+        root.left = insertIntoBST(root.left,var);
+    }
+    return root;
+}
+```
+### BST中删除一个数
+```java
+//在BST中删除一个数
+TreeNode deleteNode(TreeNode root,int key){
+    if(root.val == key){
+        /*
+        * 找到了该值进行删除(共三种情况)
+        * 1.恰好是末端节点，两个子节点都为空，直接删除
+        * 2.只有一个非空子节点，让这个子节点接替自己的位置
+        * 3.有两个非空子节点，找出左子树最大的节点或者右子树中最小的节点接替自己的位置
+        * */
+        if(root.left == null){
+            return root.right;
+        }
+        if(root.right == null){
+            return root.left;
+        }
+        //统一找出右子树最小节点,
+        //将要删除节点的值变为右子树最小值，然后删除右子树最小值
+        TreeNode minNode = getMin(root.right);
+        root.val = minNode.val;
+        root.right = deleteNode(root.right,minNode.val);
+    }else if(root.val > key){
+        root.left = deleteNode(root.left,key);
+    }else if(root.val < key){
+        root.right = deleteNode(root.right,key);
+    }
+    return root;
+}
+TreeNode getMin(TreeNode node){
+    //BST最左边的值就是最小值
+    while(node.left != null){
+        node = node.left;
+    }
+    return node;
+}
+```
 ## 树的搜索(dfs、bfs)
 ### 括号生成
 ![](https://upload-images.jianshu.io/upload_images/10460153-f0a1de8f96022c30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

@@ -27,7 +27,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/Tomcat/webapps/twoweb" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -36,6 +36,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="LeetCode.ordinary" />
       <recent name="LeetCode.ordinary._2" />
       <recent name="Template.Graph" />
       <recent name="NowCoder" />
@@ -192,7 +193,7 @@
       <workItem from="1588237882356" duration="3343000" />
       <workItem from="1588293325979" duration="5502000" />
       <workItem from="1588390068585" duration="5546000" />
-      <workItem from="1588474547252" duration="27704000" />
+      <workItem from="1588474547252" duration="37615000" />
     </task>
     <servers />
   </component>

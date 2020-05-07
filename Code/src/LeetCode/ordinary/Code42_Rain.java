@@ -1,3 +1,5 @@
+package LeetCode.ordinary;
+
 public class Code42_Rain {
     public static int trap(int[] height) {
         int[] leftmax = new int[height.length];

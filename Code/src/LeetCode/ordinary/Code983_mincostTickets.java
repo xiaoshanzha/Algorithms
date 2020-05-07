@@ -1,3 +1,5 @@
+package LeetCode.ordinary;
+
 public class Code983_mincostTickets {
 
     /*

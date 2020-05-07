@@ -1,9 +1,25 @@
 package Binary_Tree;
 
 import LeetCode.ordinary.Base.TreeNode;
-import com.sun.source.tree.Tree;
 
 public class BST {
+
+    void traverse(TreeNode root){
+        // root节点需要做什么，在这里做，剩下不用root操心
+        traverse(root.left);
+        traverse(root.right);
+    }
+
+    // eg：二叉树所有节点值加一
+    void plusOne(TreeNode root){
+        if(root == null){
+            return;
+        }
+        root.val += 1;
+        plusOne(root.left);
+        plusOne(root.right);
+    }
+
     //判断二叉搜索树
     //root需要和整个左子树和整个右子树所有节点进行比较
     boolean isValidBST(TreeNode root){
