@@ -1,4 +1,5 @@
 ## 字符串
+[TOC]
 ### 翻转字符串
 ![](https://upload-images.jianshu.io/upload_images/10460153-f6a64179b0d059c3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```java

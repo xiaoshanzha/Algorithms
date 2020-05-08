@@ -295,6 +295,52 @@ public int largestRectangleArea(int[] heights) {
     return maxArea;
 }
 ```
+#### 最大正方形(dp,跟单调栈没关系)
+![](https://upload-images.jianshu.io/upload_images/10460153-783b59becf29f079.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/10460153-d639c3ea47bdb823.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```java
+public static int maximalSquare(char[][] matrix) {
+    /*
+    * 动态规划：
+    * dp[i][j] 表示以matrix[i][j]为右下角的正方形的最大边长
+    * dp[i][j] = min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) + 1;
+    *
+    * 解释：若某格子值为1，则以此格为右下角的正方形的最大边长为
+    *       上面格子，左边格子，左上格子作为右下角形成正方形最小的那个加上此格子
+    * */
+    if(matrix == null || matrix.length == 0 || matrix[0].length == 0 ){
+        return 0;
+    }
+
+    /*
+    * 也可int[][] dp = new int[height + 1][width + 1];
+    * 多一行一列，相当于已经预处理新增一行一列，就不用像下边那样处理边界
+    * */
+    int[][] dp = new int[matrix.length][matrix[0].length];
+    int max = 0;
+    for (int i = 0; i < matrix.length; i++) {
+        for (int j = 0; j < matrix[0].length; j++) {
+            if(i == 0 || j == 0){
+                if(matrix[i][j] == '1'){
+                    dp[i][j] = 1;
+                    max = Math.max(dp[i][j],max);
+                }else {
+                    dp[i][j] = 0;
+                }
+            }else {
+                if(matrix[i][j] == '1'){
+                    dp[i][j] = Math.min(dp[i-1][j-1],dp[i-1][j]);
+                    dp[i][j] = Math.min(dp[i][j],dp[i][j-1]) + 1;
+                    max = Math.max(dp[i][j],max);
+                }else {
+                    dp[i][j] = 0;
+                }
+            }
+        }
+    }
+    return max * max;
+}
+```
 
 ### 4.判断括号合法性
 ```java
