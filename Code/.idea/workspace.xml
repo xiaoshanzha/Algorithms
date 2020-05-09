@@ -59,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code04_findMedianSortedArrays">
+  <component name="RunManager" selected="Application.Code69_mySqrt">
     <configuration name="Code04_findMedianSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code04_findMedianSortedArrays" />
       <module name="holiday" />
@@ -112,8 +112,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code76_minWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code76_minWindow" />
+    <configuration name="Code69_mySqrt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.ordinary.Code69_mySqrt" />
       <module name="holiday" />
       <extension name="coverage">
         <pattern>
@@ -127,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code69_mySqrt" />
         <item itemvalue="Application.Code04_findMedianSortedArrays" />
         <item itemvalue="Application.Code3_lengthOfLongestSubstring" />
         <item itemvalue="Application.Code438_findAnagrams" />
         <item itemvalue="Application.Code567_checkInclusion" />
-        <item itemvalue="Application.Code76_minWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +193,7 @@
       <workItem from="1588237882356" duration="3343000" />
       <workItem from="1588293325979" duration="5502000" />
       <workItem from="1588390068585" duration="5546000" />
-      <workItem from="1588474547252" duration="42695000" />
+      <workItem from="1588474547252" duration="45424000" />
     </task>
     <servers />
   </component>
